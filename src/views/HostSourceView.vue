@@ -1,7 +1,7 @@
 <template>
   <div class="host-view">
     <h1>Samples by Host Distribution</h1>
-    <plot-bar-chart 
+    <BarChart
       :data="chartData"
       :horizontal="horizontal"
       :height="500"
@@ -12,7 +12,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import PlotBarChart from '../components/PlotBarChart.vue';
+import {BarChart} from 'outbreakInfo';
 import { getHostDistribution } from '../services/postgresApi.js';
 
 const displayLimit = ref(20);

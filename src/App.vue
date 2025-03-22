@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Elasticsearch Visualizations</h1>
+      <h1>H5N1</h1>
       <nav>
         <router-link to="/isolations">Isolation Sources</router-link> | 
         <router-link to="/hosts">Hosts</router-link>
