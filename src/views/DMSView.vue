@@ -6,11 +6,11 @@
       <div class="field-select">
         <label>DMS Field:</label>
         <select v-model="selectedDmsField">
-          <option value="ferret sera escape">Ferret sera escape</option>
-          <option value="mouse sera escape">Mouse sera escape</option>
-          <option value="SA26 usage increase">SA26 receptor usage increase</option>
-          <option value="entry in 293T cells">Entry in 293T cells</option>
           <option value="stability">Stability</option>
+          <option value="ferret_sera_escape">Ferret sera escape</option>
+          <option value="mouse_sera_escape">Mouse sera escape</option>
+          <option value="sa26_usage_increase">SA26 receptor usage increase</option>
+          <option value="entry_in_293t_cells">Entry in 293T cells</option>
         </select>
       </div>
       
@@ -22,7 +22,10 @@
       </div>
     </div>
     
+    <div v-if="isLoading" class="loading">Loading data...</div>
+    <div v-else-if="error" class="error">{{ error }}</div>
     <scatter-chart
+      v-else
       :data="chartData"
       :x-key="'dms'"
       :y-key="'count'"
@@ -39,20 +42,31 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { ScatterChart, outbreakInfoColorPalette } from 'outbreakInfo';
-import { getIntrahostVariantDMS } from '../services/elasticsearchApi.js';
+import { getDMSData } from '../services/postgresApi.js';
 
-const selectedDmsField = ref('ferret sera escape');
+const selectedDmsField = ref('stability');
 const useLogScale = ref(true);
 const chartData = ref([]);
+const isLoading = ref(false);
+const error = ref(null);
 
 async function loadData() {
-  const response = await getIntrahostVariantDMS(selectedDmsField.value);
+  isLoading.value = true;
+  error.value = null;
   
-  chartData.value = response.aggregations.dms_mutation_agg.buckets.map((f) => ({
-    key: f.key.ref + "" + f.key.pos + "" + f.key.alt,
-    dms: f.key.dms,
-    count: f.doc_count
-  }));
+  try {
+    chartData.value = await getDMSData(selectedDmsField.value);
+    
+    if (chartData.value.length === 0) {
+      error.value = 'No data found for the selected metric';
+    }
+  } catch (err) {
+    console.error('Error loading DMS data:', err);
+    error.value = 'Failed to load data. Please try again later.';
+    chartData.value = [];
+  } finally {
+    isLoading.value = false;
+  }
 }
 
 onMounted(loadData);
@@ -85,6 +99,16 @@ watch(() => selectedDmsField.value, loadData);
 .log-scale-toggle {
   display: flex;
   align-items: center;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #dc3545;
 }
 
 h2 {
