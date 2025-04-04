@@ -5,6 +5,7 @@ import ReleaseDateView from '../views/ReleaseDateView.vue'
 import DMSView from '../views/DMSView.vue'
 import HistogramView from '../views/HistogramView.vue'
 import BoxPlotView from '../views/BoxPlotView.vue'
+import MutationView from '../views/MutationView.vue'
 
 const routes = [
     {
@@ -36,6 +37,11 @@ const routes = [
         path: '/box-plot',
         name: 'Box Plot',
         component: BoxPlotView
+    },
+    {
+        path: '/mutations',
+        name: 'mutations',
+        component: MutationView
     }
 ]
 
