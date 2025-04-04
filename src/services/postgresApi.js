@@ -88,3 +88,22 @@ export async function getDMSData(metric = "stability") {
     return [];
   }
 }
+
+export async function getMutationFrequencyByScore(region, metric) {
+  try {
+    const data = await makeRequest(`mutations/frequency/score?region=${region}&metric=${metric}`);
+    
+    if (!Array.isArray(data)) {
+      return [];
+    }
+    
+    return data.map(item => ({
+      key: item.ref_aa + item.position_aa + item.alt_aa,
+      x: parseFloat(item.pheno_value) || 0,
+      y: parseFloat(item.count) / 239
+    }));
+  } catch (error) {
+    console.error('Error fetching mutation frequency data:', error);
+    return [];
+  }
+}
