@@ -4,7 +4,16 @@
   <!--  TODO: Fix header background -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <router-link class="navbar-brand" to="/">Avian influenza</router-link>
+      <a class="navbar-brand no-underline" href="http://localhost:5173/">
+        <img
+            src="/assets/favicon.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Outbreak.info"
+        />
+        outbreak.info
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -94,7 +103,6 @@ const hideDropdown = () => {
 }
 
 .navbar-brand, .nav-link {
-  color: white !important;
   position: relative;
   z-index: 2; /* Keep text above the background */
 }
@@ -126,11 +134,6 @@ const hideDropdown = () => {
 /* Make sure brand text is still visible over the SVG */
 .navbar-brand {
   padding-left: 10px; /* Add some padding if needed */
-}
-
-/* Override Bootstrap's default navbar colors */
-.bg-primary {
-  background-color: rgb(44, 62, 80) !important;
 }
 
 /* Style dropdown menu */
