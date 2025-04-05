@@ -6,6 +6,10 @@ import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
 
 const routes = [
     {
+        path: '/',
+        redirect: '/mutation-surveillance',
+    },
+    {
         path: '/metadata',
         name: 'Metadata',
         component: MetadataView
