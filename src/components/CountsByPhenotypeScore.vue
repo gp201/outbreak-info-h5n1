@@ -51,7 +51,7 @@
     <div class="col col-md-3">
       <label :for="elementIds.hostField" class="form-label">Host</label>
       <select :id="elementIds.hostField" v-model="selectedHost" class="form-select">
-        <option value="all">All</option>
+        <option :value="null">All</option>
         <option v-for="item in hostData" :key="item.key" :value="item">
           {{ item.key }} ({{ item.value }})
         </option>
@@ -63,7 +63,7 @@
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
 import { ScatterChart, outbreakInfoColorPalette } from 'outbreakInfo';
-import { getHostDistribution, getCountByPhenotypeScore } from '../services/postgresApi.js';
+import { getSampleCountByField, getCountByPhenotypeScore } from '../services/postgresApi.js';
 
 const selectedPhenotypeScore = ref('sa26_usage_increase');
 const useLogScale = ref(true);
@@ -72,7 +72,7 @@ const isLoadingChart = ref(false);
 const error = ref(null);
 const uuid = useId();
 const hostData = ref([]);
-const selectedHost = ref("all");
+const selectedHost = ref(null);
 
 const elementIds = computed(() => ({
   phenotypeField: `dmsField-${uuid}`,
@@ -81,17 +81,25 @@ const elementIds = computed(() => ({
 }));
 
 const props = defineProps({
-  dataField: { type: Function, default: "variants" },
+  dataField: { type: String, default: "variants" },
   title: { type: String, default: "Host-level" }
 })
+
+async function getCountByPhenotypeScoreFilterByHost(region, phenotypeScore, host, dataField) {
+  let q = null;
+  if(host !== null){
+    q = `host=${host.key}`
+  }
+  return getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
+}
 
 async function loadData() {
   isLoadingChart.value = true;
   error.value = null;
 
   try {
-    chartData.value = await getCountByPhenotypeScore("HA", selectedPhenotypeScore.value, null, props.dataField);
-    hostData.value = await getHostDistribution();
+    chartData.value = await getCountByPhenotypeScoreFilterByHost("HA", selectedPhenotypeScore.value, selectedHost.value, props.dataField);
+    hostData.value = await getSampleCountByField("host");
 
     if (chartData.value.length === 0) {
       error.value = 'No data found for the selected metric';
@@ -102,12 +110,12 @@ async function loadData() {
     chartData.value = [];
   } finally {
     isLoadingChart.value = false;
-    console.log(chartData.value);
   }
 }
 
 onMounted(loadData);
 watch(() => selectedPhenotypeScore.value, loadData);
+watch(() => selectedHost.value, loadData);
 </script>
 
 <style scoped>

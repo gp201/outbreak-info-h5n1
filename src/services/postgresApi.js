@@ -6,33 +6,21 @@ async function makeRequest(endpoint) {
   return await response.json();
 }
 
-export async function getIsolationSourceDistribution(size = 20) {
+export async function getSampleCountByField(field = "host", size = null){
   try {
-    const data = await makeRequest("count/samples/by/isolation_source");
-    
-    const formattedData = Array.isArray(data) 
-      ? data.map(item => ({ key: item[0], value: item[1] }))
-      : Object.entries(data).map(([key, value]) => ({ key, value }));
-    
-    return formattedData
-      .sort((a, b) => b.value - a.value)
-      .slice(0, size);
-  } catch (error) {
-    return [];
-  }
-}
+    const data = await makeRequest(`count/samples/by/${field}`);
 
-export async function getHostDistribution(size = 20) {
-  try {
-    const data = await makeRequest("count/samples/by/host");
-    
-    const formattedData = Array.isArray(data) 
-      ? data.map(item => ({ key: item[0], value: item[1] }))
-      : Object.entries(data).map(([key, value]) => ({ key, value }));
-    
-    return formattedData
-      .sort((a, b) => b.value - a.value)
-      .slice(0, size);
+    let formattedData = Array.isArray(data)
+        ? data.map(item => ({ key: item[0], value: item[1] }))
+        : Object.entries(data).map(([key, value]) => ({ key, value }));
+
+    formattedData = formattedData
+        .sort((a, b) => b.value - a.value);
+    if(size !== null){
+      formattedData = formattedData.slice(0, size);
+    }
+    return formattedData;
+
   } catch (error) {
     return[];
   }

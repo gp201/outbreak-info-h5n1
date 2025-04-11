@@ -14,14 +14,14 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { BarChart, outbreakInfoColorPalette } from 'outbreakInfo';
-import { getHostDistribution } from '../services/postgresApi.js';
+import { getSampleCountByField } from '../services/postgresApi.js';
 
 const displayLimit = ref(20);
 const horizontal = ref(true);
 const chartData = ref([]);
 
 async function loadData() {
-  chartData.value = await getHostDistribution(displayLimit.value);
+  chartData.value = await getSampleCountByField("host", displayLimit.value);
 }
 
 onMounted(loadData);
