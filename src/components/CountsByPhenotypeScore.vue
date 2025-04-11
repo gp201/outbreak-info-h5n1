@@ -61,6 +61,19 @@
       <SelectBarChart @bar-selected="hostBarSelected" :selectedBarKey="selectedHost" :horizontal="true" :data="hostData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Host" />
     </div>
 
+    <div class="col col-md-3">
+      <label :for="elementIds.isolationSourceField" class="form-label">Isolation Source</label>
+      <select :id="elementIds.isolationSourceField" v-model="selectedIsolationSource" class="form-select">
+        <option :key="null" :value="{key: null, value: null}">All</option>
+        <option v-for="item in isolationSourceData" :key="item.key" :value="{ key: item.key, value: item.value }">
+          {{ item.key }} ({{ item.value }})
+        </option>
+      </select>
+      <br />
+
+      <SelectBarChart @bar-selected="isolationSourceBarSelected" :selectedBarKey="selectedIsolationSource" :horizontal="true" :data="isolationSourceData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Isolation Source" />
+    </div>
+
   </div>
 </template>
 
@@ -78,10 +91,14 @@ const uuid = useId();
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
 
+const isolationSourceData = ref([]);
+const selectedIsolationSource = ref({key: null, value: null});
+
 const elementIds = computed(() => ({
   phenotypeField: `dmsField-${uuid}`,
   logScale: `logScale-${uuid}`,
-  hostField: `hostField-${uuid}`
+  hostField: `hostField-${uuid}`,
+  isolationSourceField: `isolationSource-${uuid}`
 }));
 
 const props = defineProps({
@@ -93,10 +110,18 @@ const hostBarSelected = (item) => {
   selectedHost.value = item;
 };
 
-async function getCountByPhenotypeScoreFilterByHost(region, phenotypeScore, host, dataField) {
+const isolationSourceBarSelected = (item) => {
+  selectedIsolationSource.value = item;
+}
+
+async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, phenotypeScore, host, isolationSource, dataField) {
   let q = null;
-  if(host !== null){
-    q = `host=${host}`
+  if(host !== null && isolationSource !== null){
+    q = `host=${host} AND isolation_source=${isolationSource}`;
+  } else if (host !== null) {
+    q = `host=${host}`;
+  } else if(isolationSource !== null){
+    q = `isolation_source=${isolationSource}`;
   }
   return getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
 }
@@ -106,8 +131,9 @@ async function loadData() {
   error.value = null;
 
   try {
-    chartData.value = await getCountByPhenotypeScoreFilterByHost("HA", selectedPhenotypeScore.value, selectedHost.value.key, props.dataField);
+    chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("HA", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
     hostData.value = await getSampleCountByField("host");
+    isolationSourceData.value = await getSampleCountByField("isolation_source");
 
     if (chartData.value.length === 0) {
       error.value = 'No data found for the selected metric';
@@ -124,6 +150,7 @@ async function loadData() {
 onMounted(loadData);
 watch(() => selectedPhenotypeScore.value, loadData);
 watch(() => selectedHost.value, loadData);
+watch(() => selectedIsolationSource.value, loadData);
 </script>
 
 <style scoped>
