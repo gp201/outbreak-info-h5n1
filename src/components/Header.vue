@@ -1,7 +1,5 @@
 <!-- src/components/NavBar.vue -->
 <template>
-  <!--      TODO: Add outbreak.info logo -->
-  <!--  TODO: Fix header background -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand no-underline" href="http://localhost:5173/">
@@ -63,7 +61,6 @@
 </script>
 
 <style scoped>
-/* In your global CSS or component scoped CSS */
 .navbar {
   background-color: rgb(44, 62, 80);
   position: relative;
@@ -71,16 +68,15 @@
 
 .navbar-brand, .nav-link {
   position: relative;
-  z-index: 2; /* Keep text above the background */
+  z-index: 2;
 }
 
-/* Container for the svg background at the left side */
-.navbar::before {  /* Changed from after to before */
+.navbar::before {
   content: '';
   position: absolute;
-  left: 0;  /* Changed from right to left */
+  left: 0;
   top: 0;
-  width: 40%; /* Adjust width as needed */
+  width: 40%;
   height: 100%;
   background-image: url('../assets/navback-01.svg');
   background-repeat: no-repeat;
@@ -90,7 +86,6 @@
   pointer-events: none;
 }
 
-/* Ensure navbar content is above the SVG background */
 .navbar .container,
 .navbar-collapse,
 .navbar-nav {
@@ -98,7 +93,6 @@
   z-index: 1;
 }
 
-/* Make sure brand text is still visible over the SVG */
 .navbar-brand {
   padding-left: 10px; /* Add some padding if needed */
 }

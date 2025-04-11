@@ -114,7 +114,7 @@ async function loadData() {
     isolationSourceData.value = await getSampleCountByField("isolation_source");
     rawData.value = await getLineageCountsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key);
     chartData.value = transformData(rawData.value)["usda_genoflu"]; //TODO: Generalize the lineage system
-    console.log(chartData.value);
+
     if (chartData.value.length === 0) {
       error.value = 'No data found for the selected filters';
     }
