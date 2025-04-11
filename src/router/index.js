@@ -3,6 +3,7 @@ import BoxPlotView from '../views/BoxPlotView.vue'
 import MetadataView from "../views/MetadataView.vue";
 import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
 import SearchView from "../views/SearchView.vue";
+import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: '/mutation-surveillance',
         name: 'Mutation surveillance',
         component: MutationSurveillanceView
+    },
+    {
+        path: '/lineage-surveillance',
+        name: 'Lineage surveillance',
+        component: LineageSurveillanceView
     },
     {
         path: '/search',

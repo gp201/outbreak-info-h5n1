@@ -30,6 +30,12 @@
             </router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link" to="/lineage-surveillance"
+                         :class="{ active: $route.path === '/lineage-surveillance' }">
+              Lineage Surveillance
+            </router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/metadata"
                          :class="{ active: $route.path === '/metadata' }">
               Metadata
