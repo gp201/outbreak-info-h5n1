@@ -8,43 +8,38 @@
           :horizontal="horizontal"
           :height="500"
           :marginLeft="180"
-          :barColor="outbreakInfoColorPalette.primary"
+          :barColor="outbreakInfoColorPalette[0]"
           xLabel="Lineage"
           yLabel="Count"
       />
     </div>
 
     <div class="col col-md-3">
-      <label :for="elementIds.hostField" class="form-label">Host</label>
-      <select :id="elementIds.hostField" v-model="selectedHost" class="form-select">
-        <option :key="null" :value="{key: null, value: null}">All</option>
-        <option v-for="item in hostData" :key="item.key" :value="{ key: item.key, value: item.value }">
-          {{ item.key }} ({{ item.value }})
-        </option>
-      </select>
-      <br />
-
-      <SelectBarChart @bar-selected="hostBarSelected" :selectedBarKey="selectedHost" :horizontal="true" :data="hostData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Host" />
+      <SelectBarChartWithBarGraph
+          :data="hostData"
+          fieldName="Host"
+          :selectedItem="selectedHost"
+          @item-selected="hostBarSelected"
+          :width="330"
+          :height="310"
+          :marginLeft="60" />
     </div>
 
     <div class="col col-md-3">
-      <label :for="elementIds.isolationSourceField" class="form-label">Isolation Source</label>
-      <select :id="elementIds.isolationSourceField" v-model="selectedIsolationSource" class="form-select">
-        <option :key="null" :value="{key: null, value: null}">All</option>
-        <option v-for="item in isolationSourceData" :key="item.key" :value="{ key: item.key, value: item.value }">
-          {{ item.key }} ({{ item.value }})
-        </option>
-      </select>
-      <br />
-
-      <SelectBarChart @bar-selected="isolationSourceBarSelected" :selectedBarKey="selectedIsolationSource" :horizontal="true" :data="isolationSourceData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Isolation Source" />
+      <SelectBarChartWithBarGraph
+          :data="isolationSourceData"
+          fieldName="Isolation Source"
+          :selectedItem="selectedIsolationSource"
+          @item-selected="isolationSourceBarSelected"
+          :width="300"
+          :height="310" />
     </div>
   </div>
 </template>
 
 <script setup>
 import {ref, onMounted, computed, useId, watch} from 'vue';
-import { BarChart, outbreakInfoColorPalette, SelectBarChart } from 'outbreakInfo';
+import { BarChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph } from 'outbreakInfo';
 import {getLineageCountBySample, getSampleCountByField} from '../services/postgresApi.js';
 
 const horizontal = ref(false);
@@ -59,11 +54,6 @@ const isolationSourceData = ref([]);
 const selectedIsolationSource = ref({key: null, value: null});
 
 const uuid = useId();
-
-const elementIds = computed(() => ({
-  hostField: `hostField-${uuid}`,
-  isolationSourceField: `isolationSource-${uuid}`
-}));
 
 const hostBarSelected = (item) => {
   selectedHost.value = item;

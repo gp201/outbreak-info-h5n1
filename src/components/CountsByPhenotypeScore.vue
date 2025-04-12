@@ -5,6 +5,7 @@
     <div class="row">
       <div class="col mb-3">
         <label :for="elementIds.phenotypeField" class="form-label">Phenotype</label>
+<!--        TODO: Import SelectComponent from component library -->
         <select :id="elementIds.phenotypeField" v-model="selectedPhenotypeScore" class="form-select">
           <optgroup label="Deep mutational scanning">
             <option value="stability">Stability</option>
@@ -21,6 +22,7 @@
 
       <div class="col log-scale-toggle mb-3 d-flex align-items-end">
         <div class="mb-2 mt-2 form-check">
+<!--        TODO: Import CheckBoxComponent from component library -->
           <input type="checkbox" v-model="useLogScale" class="form-check-input" :id="elementIds.logScale">
           <label class="form-check-label" :for="elementIds.logScale">
             Log scale
@@ -32,6 +34,7 @@
 
   <div class="row">
     <div class="col col-md-6">
+<!--      TODO: Import LoadingComponent from component library -->
       <div v-if="isLoadingChart" class="loading">Loading data...</div>
       <div v-else-if="error" class="error">{{ error }}</div>
       <scatter-chart
@@ -39,8 +42,8 @@
           :data="chartData"
           :x-key="'phenotypeScore'"
           :y-key="'count'"
+          :pointColor="outbreakInfoColorPalette[0]"
           :title-key="'key'"
-          :point-color="outbreakInfoColorPalette[6]"
           :x-label="selectedPhenotypeScore"
           :y-label="'Number of samples'"
           :log-scale="useLogScale"
@@ -49,29 +52,24 @@
     </div>
 
     <div class="col col-md-3">
-      <label :for="elementIds.hostField" class="form-label">Host</label>
-      <select :id="elementIds.hostField" v-model="selectedHost" class="form-select">
-        <option :key="null" :value="{key: null, value: null}">All</option>
-        <option v-for="item in hostData" :key="item.key" :value="{ key: item.key, value: item.value }">
-          {{ item.key }} ({{ item.value }})
-        </option>
-      </select>
-      <br />
-
-      <SelectBarChart @bar-selected="hostBarSelected" :selectedBarKey="selectedHost" :horizontal="true" :data="hostData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Host" />
+      <SelectBarChartWithBarGraph
+          :data="hostData"
+          fieldName="Host"
+          :selectedItem="selectedHost"
+          @item-selected="hostBarSelected"
+          :width="330"
+          :height="310"
+          :marginLeft="60" />
     </div>
 
     <div class="col col-md-3">
-      <label :for="elementIds.isolationSourceField" class="form-label">Isolation Source</label>
-      <select :id="elementIds.isolationSourceField" v-model="selectedIsolationSource" class="form-select">
-        <option :key="null" :value="{key: null, value: null}">All</option>
-        <option v-for="item in isolationSourceData" :key="item.key" :value="{ key: item.key, value: item.value }">
-          {{ item.key }} ({{ item.value }})
-        </option>
-      </select>
-      <br />
-
-      <SelectBarChart @bar-selected="isolationSourceBarSelected" :selectedBarKey="selectedIsolationSource" :horizontal="true" :data="isolationSourceData.slice(0, 10)" :marginLeft="75" :height="300" :width="300" fieldName="Isolation Source" />
+      <SelectBarChartWithBarGraph
+          :data="isolationSourceData"
+          fieldName="Isolation Source"
+          :selectedItem="selectedIsolationSource"
+          @item-selected="isolationSourceBarSelected"
+          :width="300"
+          :height="310" />
     </div>
 
   </div>
@@ -79,7 +77,7 @@
 
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
-import { ScatterChart, outbreakInfoColorPalette, SelectBarChart } from 'outbreakInfo';
+import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/postgresApi.js';
 
 const selectedPhenotypeScore = ref('sa26_usage_increase');
@@ -96,9 +94,7 @@ const selectedIsolationSource = ref({key: null, value: null});
 
 const elementIds = computed(() => ({
   phenotypeField: `dmsField-${uuid}`,
-  logScale: `logScale-${uuid}`,
-  hostField: `hostField-${uuid}`,
-  isolationSourceField: `isolationSource-${uuid}`
+  logScale: `logScale-${uuid}`
 }));
 
 const props = defineProps({
@@ -108,6 +104,7 @@ const props = defineProps({
 
 const hostBarSelected = (item) => {
   selectedHost.value = item;
+  console.log(item);
 };
 
 const isolationSourceBarSelected = (item) => {
