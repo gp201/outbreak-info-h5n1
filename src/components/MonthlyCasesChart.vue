@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Monthly Cases</h1>
     <div v-if="isLoading" class="loading">Loading data...</div>
     <div v-else-if="error" class="error">{{ error }}</div>
     <MonthlyBarChart v-else :data="monthlyData" />
