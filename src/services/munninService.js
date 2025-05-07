@@ -1,4 +1,4 @@
-const PG_BASE_URL = "http://kenny:8000/";
+const PG_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 async function makeRequest(endpoint) {
   const url = `${PG_BASE_URL}${endpoint}`;
