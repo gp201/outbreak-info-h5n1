@@ -3,15 +3,19 @@
     <div class="col col-md-6">
       <div v-if="isLoadingChart" class="loading">Loading data...</div>
       <div v-else-if="error" class="error">{{ error }}</div>
-      <BarChart
-          :data="chartData"
-          :horizontal="horizontal"
-          :height="500"
-          :marginLeft="180"
-          :barColor="outbreakInfoColorPalette[0]"
-          xLabel="Lineage"
-          yLabel="Count"
-      />
+      <div v-for="(value, key) in transformedData" :key="key">
+        <h4>{{ lineageSystemLabels[key] }}</h4>
+        <BarChart
+            :data="value"
+            :horizontal="false"
+            :height="500"
+            :marginLeft="180"
+            :marginBottom="100"
+            :barColor="outbreakInfoColorPalette[0]"
+            xLabel="Lineage"
+            yLabel="Count"
+        />
+      </div>
     </div>
 
     <div class="col col-md-3">
@@ -40,15 +44,17 @@
 <script setup>
 import {ref, onMounted, computed, useId, watch} from 'vue';
 import { BarChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph } from 'outbreakInfo';
-import {getLineageCountBySample, getSampleCountByField} from '../services/postgresApi.js';
+import {getLineageCountBySample, getSampleCountByField} from '../services/munninService.js';
 
-const horizontal = ref(false);
-const rawData = ref([]);
-const chartData = ref([]);
+const transformedData = ref([]);
 const isLoadingChart = ref(false);
 const error = ref(null);
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
+const lineageSystemLabels = ref({ //TODO: Store system label in API
+  "usda_genoflu": "USDA GenoFLU",
+  "freyja_demixed": "Custom Nomenclature"
+});
 
 const isolationSourceData = ref([]);
 const selectedIsolationSource = ref({key: null, value: null});
@@ -102,16 +108,15 @@ async function loadData() {
   try {
     hostData.value = await getSampleCountByField("host");
     isolationSourceData.value = await getSampleCountByField("isolation_source");
-    rawData.value = await getLineageCountsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key);
-    chartData.value = transformData(rawData.value)["usda_genoflu"]; //TODO: Generalize the lineage system
+    let rawData = await getLineageCountsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key);
+    transformedData.value = transformData(rawData);
 
-    if (chartData.value.length === 0) {
+    if (transformedData.value.length === 0) {
       error.value = 'No data found for the selected filters';
     }
   } catch (err) {
     console.error('Error loading lineage counts:', err);
     error.value = 'Failed to load data. Please try again later.';
-    chartData.value = [];
   } finally {
     isLoadingChart.value = false;
   }

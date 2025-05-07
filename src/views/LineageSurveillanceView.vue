@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Population-level</h2>
+        <hr>
         <LineageCounts />
       </div>
     </div>
