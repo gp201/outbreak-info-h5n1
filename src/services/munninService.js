@@ -135,3 +135,90 @@ export async function getLineageSummaryStatsBySample(q = null)  {
   }
 
 }
+
+async function getCountByDateBin(field="mutations", q = '', group_by = "collection_date", date_bin = 'month', days = 5, change_bin = 'aa', max_span_days = 366) {
+  const validGroupBy = ['collection_date', 'release_date'];
+  const validDateBins = ['month', 'year', 'day'];
+  const validChangeBins = ['nt', 'aa'];
+  const validFields = ['mutations', 'variants', 'lineages'];
+
+  if (!validFields.includes(field)) {
+    console.error(`Invalid field: must be one of ${validFields.join(', ')}`);
+    return {};
+  }
+
+  if (!validGroupBy.includes(group_by)) {
+    console.error(`Invalid group_by: must be one of ${validGroupBy.join(', ')}`);
+    return {};
+  }
+
+  if (!validDateBins.includes(date_bin)) {
+    console.error(`Invalid date_bin: must be one of ${validDateBins.join(', ')}`);
+    return {};
+  }
+
+  if (date_bin === 'day') {
+    if (typeof days !== 'number' || days < 0 || days > 30) {
+      console.error(`Invalid days: must be a number between 0 and 30 when date_bin is 'day'`);
+      return {};
+    }
+  }
+
+  if (!validChangeBins.includes(change_bin)) {
+    console.error(`Invalid change_bin: must be one of ${validChangeBins.join(', ')}`);
+    return {};
+  }
+
+  if (q === '') {
+    console.error(`Invalid q: must include 'position_nt=' or 'position_aa='`);
+    return {};
+  }
+
+  if (!(q.includes('position_nt=') || q.includes('position_aa='))) {
+    console.error(`Invalid q: must include 'position_nt=' or 'position_aa='`);
+    return {};
+  }
+
+
+  const params = new URLSearchParams({
+    group_by,
+    date_bin,
+    days: days.toString(),
+    change_bin,
+    max_span_days: max_span_days.toString()
+  });
+
+  if (q) {
+    params.append('q', q);
+  }
+
+  const endpoint = `v0/${field}:count?${params.toString()}`;
+
+  return makeRequest(endpoint);
+}
+
+function flattenDateBins(data) {
+  const result = [];
+
+  for (const [key, date_data] of Object.entries(data)) {
+    for (const [group, value] of Object.entries(date_data)) {
+      result.push({
+        key: key,
+        value: value,
+        group: group
+      });
+    }
+  }
+
+  return result.sort((a, b) => a.date - b.date);
+}
+
+export async function getVariantCountByDateBin(q = '', group_by = "collection_date", date_bin = 'month', days = 5, change_bin = 'aa', max_span_days = 366)  {
+  try {
+    const res = await getCountByDateBin("variants",  q, group_by, date_bin, days, change_bin, max_span_days);
+    return flattenDateBins(res);
+  } catch (error) {
+    console.error(`Error fetching variant counts by date bin`, error);
+    return [];
+  }
+}
