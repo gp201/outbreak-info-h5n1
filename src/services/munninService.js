@@ -271,3 +271,32 @@ export async function getLineageCountByDateBin(q = '', group_by = "collection_da
     return [];
   }
 }
+
+export async function getLineageMutationIncidence(lineage, change_bin="aa", q = null, min_prevalence=0.75)  {
+  if(lineage === null) {
+    return [];
+  }
+  try {
+    let url = `v0/lineages/mutationIncidence`;
+    url += `?lineage=${encodeURIComponent(lineage)}&change_bin=${encodeURIComponent(change_bin)}`;
+    if(q!==null) {
+      url += `&q=${q}`;
+    }
+    const data = await makeRequest(url) ;
+
+    const result = {};
+    for (const gene in data["counts"]) {
+      result[gene] = data["counts"][gene].map(d => ({
+        ...d,
+        pos: d.pos.toString(),
+        prev: d.count / data["samples"]
+      })).filter(d => d.prev >= min_prevalence) ;
+    }
+
+    return result;
+  } catch (error) {
+    console.error(`Error fetching lineage count by sample`, error);
+    return [];
+  }
+
+}
