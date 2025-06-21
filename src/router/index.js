@@ -4,6 +4,7 @@ import MetadataView from "../views/MetadataView.vue";
 import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
 import SearchView from "../views/SearchView.vue";
 import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
+import LineageComparisonView from "../views/LineageComparisonView.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: '/lineage-surveillance',
         name: 'Lineage surveillance',
         component: LineageSurveillanceView
+    },
+    {
+        path: '/lineage-comparison',
+        name: 'Lineage comparison',
+        component: LineageComparisonView
     },
     {
         path: '/search',
