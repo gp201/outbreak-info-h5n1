@@ -1,20 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import BoxPlotView from '../views/BoxPlotView.vue'
 import MetadataView from "../views/MetadataView.vue";
 import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
 import SearchView from "../views/SearchView.vue";
 import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
 import LineageComparisonView from "../views/LineageComparisonView.vue";
+import VariantMutationSurveillanceView from "../views/VariantMutationSurveillanceView.vue";
 
 const routes = [
     {
         path: '/',
         redirect: '/mutation-surveillance',
-    },
-    {
-        path: '/metadata',
-        name: 'Metadata',
-        component: MetadataView
     },
     {
         path: '/mutation-surveillance',
@@ -32,14 +27,19 @@ const routes = [
         component: LineageComparisonView
     },
     {
+        path: '/metadata',
+        name: 'Metadata',
+        component: MetadataView
+    },
+    {
         path: '/search',
         name: 'Search',
         component: SearchView
     },
     {
-        path: '/box-plot',
-        name: 'Box Plot',
-        component: BoxPlotView
+        path: '/integrated-surveillance',
+        name: 'Integrated surveillance',
+        component: VariantMutationSurveillanceView
     },
 ]
 
