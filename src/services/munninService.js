@@ -327,5 +327,29 @@ export async function getVariantMutationLag(lineage, lineage_system_name) {
     return data;
   } catch (error) {
     console.error(`Error fetching variant mutation lag`, error);
+    return {};
   }
+}
+
+export async function getRegionToGffFeatureMapping(intermediate) {
+  if(!['variants', 'mutations'].includes(intermediate)) {
+    console.error(`Intermediate needs to be "variant" or "mutation"`);
+  }
+  try {
+    const data = await makeRequest(`${intermediate}:regionAndGffFeature`);
+    return Object.fromEntries(
+        data.map(({ gff_feature, region }) => [gff_feature, region])
+    );
+  } catch (error) {
+    console.error(`Error fetching variant mutation lag`, error);
+    return {};
+  }
+}
+
+export async function getRegionToGffFeatureMappingForMutations() {
+  return getRegionToGffFeatureMapping('mutations');
+}
+
+export async function getRegionToGffFeatureMappingForVariants() {
+  return getRegionToGffFeatureMapping('variants');
 }

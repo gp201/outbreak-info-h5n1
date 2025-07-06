@@ -11,31 +11,52 @@
     </div>
 
     <div v-if="isLoading" class="loading">Loading data...</div>
-    <div v-for="(data, gene) in chartData" :key="gene" class="chart-section">
-      <h2>{{ gene }}</h2>
-      <HeatMapChart
-          :data="data"
-          x="mut"
-          y="lineage"
-          val="prevalence"
-          :cellWidth="20"
-          :cellHeight="10"
-          yLabel=""
-          xLabel=""
-          :domain="[0.75, 1]"
-      />
+    <div class="container-fluid">
+      <div class="row">
+        <div v-for="(data, gene) in chartData" :key="gene" class="col-xl-6 col-lg-6 col-md-12 mb-6 chart-section">
+          <div class="card shadow-sm h-100 border-light bg-transparent">
+            <div class="card-header border-light">
+              <h4 class="card-title text-end fw-bold text-right mb-0">
+                {{ gene }}
+                <small class="text-muted">{{ gene in gffFeatureToRegion ? "Region: " + gffFeatureToRegion[gene] : "" }}</small>
+              </h4>
+            </div>
+
+            <div class="card-body bg-none p-4 d-flex justify-content-center">
+              <HeatMapChart
+                  :data="data"
+                  x="mut"
+                  y="lineage"
+                  val="prevalence"
+                  :cellWidth="20"
+                  :cellHeight="10"
+                  yLabel=""
+                  xLabel=""
+                  :domain="[0.75, 1]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
 import { HeatMapChart, MultiSelectComponent } from 'outbreakInfo';
-import { getLineageMutationIncidence, getLineagesByLineageSystem } from '../services/munninService.js';
+import {
+  getLineageMutationIncidence,
+  getLineagesByLineageSystem,
+  getRegionToGffFeatureMapping, getRegionToGffFeatureMappingForMutations
+} from '../services/munninService.js';
 
 const chartData = ref([]);
 const isLoading = ref(false);
 const allLineages = ref([]);
+const gffFeatureToRegion = ref({})
 
 async function getAllLineages(lineage_system_name){
   const resp = await getLineagesByLineageSystem(lineage_system_name);
@@ -60,6 +81,7 @@ function mergeMutationCounts(lineage_mutations) {
 
 async function loadData() {
   allLineages.value = await getAllLineages("usda_genoflu");
+  gffFeatureToRegion.value = await getRegionToGffFeatureMappingForMutations();
 }
 
 async function getLineageMutations(selectedLineages) {
