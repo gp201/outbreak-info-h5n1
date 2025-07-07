@@ -287,7 +287,7 @@ export async function getLineageMutationIncidence(lineage, lineage_system_name, 
     return [];
   }
   try {
-    let url = `v0/lineages/mutationIncidence`;
+    let url = `v0/lineages:mutationIncidence`;
     url += `?lineage=${encodeURIComponent(lineage)}&change_bin=${encodeURIComponent(change_bin)}&lineage_system_name=${lineage_system_name}`;
     if(q!==null) {
       url += `&q=${q}`;
@@ -352,4 +352,32 @@ export async function getRegionToGffFeatureMappingForMutations() {
 
 export async function getRegionToGffFeatureMappingForVariants() {
   return getRegionToGffFeatureMapping('variants');
+}
+
+export async function getLineageMutationProfile(lineage, lineage_system_name, q = null) {
+  try {
+    let url = `v0/lineages:mutationProfile?lineage=${encodeURIComponent(lineage)}&lineage_system_name=${lineage_system_name}`;
+    if (q !== null)
+      url += `?q=${q}`;
+    const data = await makeRequest(url);
+    const total_alleles = data.reduce((acc, item) => acc + item.count, 0);
+    const dataByRegion = data.map(item => ({
+      ...item,
+      lineage: lineage,
+      key: item.ref_nt + "->" + item.alt_nt,
+      value: item.count/total_alleles
+    })).reduce((acc, item) => {
+      const key = item.region;
+      (acc[key] ??= []).push(item);
+      return acc;
+    }, {});
+
+    for (const arr of Object.values(dataByRegion)) {
+      arr.sort((a, b) => a.key.localeCompare(b.key));
+    }
+    return dataByRegion;
+  } catch (error) {
+    console.error(`Error fetching lineage mutation profile`, error);
+    return {};
+  }
 }
