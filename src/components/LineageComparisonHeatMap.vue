@@ -1,6 +1,7 @@
 <template>
   <div class="host-view">
-    <h1>Compare mutations across lineages</h1>
+    <h4>Compare mutations across lineages</h4>
+    <hr>
 
     <LineageMultiSelect @lineagesSelectedButtonClick="getAllLineageMutationIncidence" />
 

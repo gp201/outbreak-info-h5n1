@@ -1,5 +1,5 @@
 <template>
-  <h2>Mutation profile comparison</h2>
+  <h4>Mutation profile comparison</h4>
   <hr>
   <LineageMultiSelect @lineagesSelectedButtonClick="getAllMutationProfiles" />
 
