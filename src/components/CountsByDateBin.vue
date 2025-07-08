@@ -8,7 +8,7 @@
           <input
               type="text"
               v-model="siteQuery"
-              placeholder="238"
+              placeholder="HA:238"
               class="form-control"
               @keyup.enter="searchSite"
           />
@@ -53,7 +53,7 @@ const props = defineProps({
   },
   defaultQuery: {
     type: String,
-    default: '238'
+    default: 'HA:238'
   },
   title: {
     type: String,
@@ -75,12 +75,18 @@ async function searchSite() {
   
   isLoading.value = true;
   error.value = null;
-  
-  try {
-    results.value = await props.serviceFunction(`position_aa=${siteQuery.value} ^ region=HA`);
+  const parts = siteQuery.value.split(":");
 
-    console.log(results.value);
-    
+  if (parts.length !== 2) {
+    console.log("Specify site based on <region>:<position>");
+    results.value = [];
+  }
+
+  const [region, positionAA] = parts;
+
+  try {
+    results.value = await props.serviceFunction(`position_aa=${positionAA} ^ region=${region}`);
+
     if (results.value.length === 0) {
       error.value = `No results found for "${siteQuery.value}"`;
     }

@@ -1,6 +1,6 @@
 <template>
   <h2>{{ title }}</h2>
-
+  <hr>
   <form>
     <div class="row">
       <div class="col mb-3">

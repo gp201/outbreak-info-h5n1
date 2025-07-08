@@ -1,6 +1,6 @@
 <template>
   <div class="host-view">
-    <h4>Phenotype over time</h4>
+    <Divider text="Phenotype over time" title-placement="left" />
     <div v-if="isLoading">
       <LoadingSpinner />
     </div>
@@ -27,12 +27,11 @@
       />
       </div>
   </div>
-  <hr>
 </template>
 
 <script setup>
 import {onMounted, ref, watch} from 'vue';
-import { TimeSeriesBarChart, TextInput, LoadingSpinner } from 'outbreakInfo';
+import { TimeSeriesBarChart, TextInput, LoadingSpinner, Divider } from 'outbreakInfo';
 import {
   getPhenotypeMetricCountsForMutationsByCollectionDate,
   getPhenotypeMetricCountsForVariantsByCollectionDate, getPhenotypeMetricValueByMutationsQuantile,
@@ -60,7 +59,7 @@ function ungroupData(data) {
 async function getPhenotypeMetricCountsForDataFieldByCollectionDate(dataField, phenotypeMetricName, q) {
   if (dataField === "variants") {
     if(phenotypeMetricValueThreshold.value.phenotype_metric_value === null) {
-      phenotypeMetricValueThreshold.value = await getPhenotypeMetricValueByMutationsQuantile(phenotypeMetricName, 0.5);
+      phenotypeMetricValueThreshold.value = await getPhenotypeMetricValueByVariantsQuantile(phenotypeMetricName, 0.5);
     }
     return await getPhenotypeMetricCountsForMutationsByCollectionDate(phenotypeMetricName, phenotypeMetricValueThreshold.value.phenotype_metric_value, q);
   } else if (dataField === "mutations") {
@@ -99,9 +98,20 @@ async function handleSubmit(value) {
 }
 
 onMounted(loadData);
-watch(() => props.selectedPhenotypeScore, loadData, { immediate: true, deep: true });
-watch(() => props.selectedHost, loadData, { immediate: true, deep: true });
-watch(() => props.selectedIsolationSource, loadData, { immediate: true, deep: true });
+watch(() => props.selectedPhenotypeScore, () => {
+  phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
+  loadData();
+}, { immediate: true, deep: true });
+
+watch(() => props.selectedHost, () => {
+  phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
+  loadData();
+}, { immediate: true, deep: true });
+
+watch(() => props.selectedIsolationSource, () => {
+  phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
+  loadData();
+}, { immediate: true, deep: true });
 </script>
 
 <style scoped>
