@@ -5,13 +5,13 @@
     <div class="row">
       <div class="col mb-3">
         <label :for="elementIds.phenotypeField" class="form-label">Phenotype</label>
-<!--        TODO: Import SelectComponent from component library -->
+<!--        TODO: Import MultiSelectComponent from component library -->
         <select :id="elementIds.phenotypeField" v-model="selectedPhenotypeScore" class="form-select">
           <optgroup label="Deep mutational scanning">
             <option value="stability">Stability</option>
             <option value="ferret_sera_escape">Ferret sera escape</option>
             <option value="mouse_sera_escape">Mouse sera escape</option>
-            <option value="sa26_usage_increase">SA26 receptor usage increase</option>
+            <option value="sa26_usage_increase">Increase in 2,6 sialic acid receptor usage</option>
             <option value="entry_in_293t_cells">Entry in 293T cells</option>
           </optgroup>
           <optgroup label="Computational prediction">
@@ -73,12 +73,20 @@
     </div>
 
   </div>
+  <div class="col- col-md-12">
+    <PhenotypeMetricsByCollectionDate
+        :selectedPhenotypeScore="selectedPhenotypeScore"
+        :selectedHost="selectedHost"
+        :selectedIsolationSource="selectedIsolationSource"
+        :dataField="props.dataField" />
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
 import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
+import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 
 const selectedPhenotypeScore = ref('sa26_usage_increase');
 const useLogScale = ref(true);
@@ -104,7 +112,6 @@ const props = defineProps({
 
 const hostBarSelected = (item) => {
   selectedHost.value = item;
-  console.log(item);
 };
 
 const isolationSourceBarSelected = (item) => {

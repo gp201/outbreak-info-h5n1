@@ -7,16 +7,12 @@
       <div class="col-md-12">
         <CountsByPhenotypeScore dataField="mutations" title="Population-level" />
       </div>
-      <div class="col-md-12">
-        <PhenotypeMetricsByCollectionDate />
-      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import CountsByPhenotypeScore from "../components/CountsByPhenotypeScore.vue";
-import PhenotypeMetricsByCollectionDate from "../components/PhenotypeMetricsByCollectionDate.vue";
 </script>
 
 <style scoped>
