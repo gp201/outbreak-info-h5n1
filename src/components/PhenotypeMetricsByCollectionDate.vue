@@ -61,18 +61,20 @@ async function getPhenotypeMetricCountsForDataFieldByCollectionDate(dataField, p
     if(phenotypeMetricValueThreshold.value.phenotype_metric_value === null) {
       phenotypeMetricValueThreshold.value = await getPhenotypeMetricValueByVariantsQuantile(phenotypeMetricName, 0.5);
     }
-    return await getPhenotypeMetricCountsForMutationsByCollectionDate(phenotypeMetricName, phenotypeMetricValueThreshold.value.phenotype_metric_value, q);
+    return await getPhenotypeMetricCountsForVariantsByCollectionDate(phenotypeMetricName, phenotypeMetricValueThreshold.value.phenotype_metric_value, q);
   } else if (dataField === "mutations") {
     if(phenotypeMetricValueThreshold.value.phenotype_metric_value === null) {
       phenotypeMetricValueThreshold.value = await getPhenotypeMetricValueByMutationsQuantile(phenotypeMetricName, 0.5);
     }
-    return await getPhenotypeMetricCountsForVariantsByCollectionDate(phenotypeMetricName, phenotypeMetricValueThreshold.value.phenotype_metric_value, q);
+    return await getPhenotypeMetricCountsForMutationsByCollectionDate(phenotypeMetricName, phenotypeMetricValueThreshold.value.phenotype_metric_value, q);
   } else {
     return [];
   }
 }
 
 async function loadData() {
+  if (isLoading.value) return;
+  
   chartData.value = [];
   if (props.selectedPhenotypeScore !== "") {
     let q = "";
@@ -101,17 +103,17 @@ onMounted(loadData);
 watch(() => props.selectedPhenotypeScore, () => {
   phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
   loadData();
-}, { immediate: true, deep: true });
+}, { deep: true });
 
 watch(() => props.selectedHost, () => {
   phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
   loadData();
-}, { immediate: true, deep: true });
+}, { deep: true });
 
 watch(() => props.selectedIsolationSource, () => {
   phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
   loadData();
-}, { immediate: true, deep: true });
+}, { deep: true });
 </script>
 
 <style scoped>
