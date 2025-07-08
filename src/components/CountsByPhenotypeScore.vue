@@ -74,12 +74,19 @@
     </div>
 
   </div>
-  <div class="col- col-md-12">
-    <PhenotypeMetricsByCollectionDate
-        :selectedPhenotypeScore="selectedPhenotypeScore"
-        :selectedHost="selectedHost"
-        :selectedIsolationSource="selectedIsolationSource"
-        :dataField="props.dataField" />
+  <div class="row">
+    <div class="col col-md-12">
+      <PhenotypeMetricsByCollectionDate
+          :selectedPhenotypeScore="selectedPhenotypeScore"
+          :selectedHost="selectedHost"
+          :selectedIsolationSource="selectedIsolationSource"
+          :dataField="props.dataField" />
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col col-md-12">
+      <AnnotationsByCollectionDate :dataField="props.dataField" />
+    </div>
   </div>
 </template>
 
@@ -88,6 +95,7 @@ import { ref, onMounted, watch, useId, computed } from 'vue';
 import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
+import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
 
 const selectedPhenotypeScore = ref('sa26_usage_increase');
 const useLogScale = ref(true);

@@ -424,7 +424,6 @@ export async function getPhenotypeMetricCountsForVariantsByCollectionDate(phenot
 }
 
 async function getPhenotypeMetricValueByDataFieldQuantile(dataField, phenotypeMetricName, quantile = 0.5) {
-  console.log(quantile)
   if(dataField !== "Mutations" && dataField !== "Variants") {
     return {};
   }
@@ -444,4 +443,44 @@ export async function getPhenotypeMetricValueByMutationsQuantile(phenotypeMetric
 
 export async function getPhenotypeMetricValueByVariantsQuantile(phenotypeMetricName, quantile = 0.5) {
   return await getPhenotypeMetricValueByDataFieldQuantile("Variants", phenotypeMetricName, quantile);
+}
+
+async function getAnnotationsByDataFieldAndCollectionDate(dataField, effectDetail, q= null, dateBin= "month", days=5, maxSpanDays=31) {
+  if(dataField !== "Mutations" && dataField !== "Variants") {
+    return [];
+  }
+  if(effectDetail === null) {
+    return [];
+  }
+  try {
+    let url = `v0/annotations:by${dataField}AndCollectionDate`
+    url += `?effect_detail=${encodeURIComponent(effectDetail)}`
+    url += `&date_bin=${encodeURIComponent(dateBin)}`;
+    url += `&days=${encodeURIComponent(days)}`;
+    url += `&max_span_days=${encodeURIComponent(maxSpanDays)}`;
+    if(q !== "" && q!== null)
+      url += `&q=${encodeURIComponent(q)}`;
+    return await makeRequest(url);
+  } catch (error) {
+    console.error(`Error fetching annotations metric value by ${dataField}`, error);
+    return [];
+  }
+}
+
+export async function getAnnotationsByMutationsAndCollectionDate(effectDetail, q= null, dateBin= "month", days=5, maxSpanDays=31) {
+  return await  getAnnotationsByDataFieldAndCollectionDate("Mutations", effectDetail, q, dateBin, days, maxSpanDays)
+}
+
+export async function getAnnotationsByVariantsAndCollectionDate(effectDetail, q= null, dateBin= "month", days=5, maxSpanDays=31) {
+  return await  getAnnotationsByDataFieldAndCollectionDate("Variants", effectDetail, q, dateBin, days, maxSpanDays)
+}
+
+export async function getAllAnnotationEffects() {
+  try {
+    let url = `v0/annotationEffects`
+    return await makeRequest(url);
+  } catch (error) {
+    console.error(`Error fetching annotation effects`, error);
+    return {};
+  }
 }
