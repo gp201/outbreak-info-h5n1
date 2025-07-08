@@ -1,6 +1,8 @@
 <template>
   <LineageMultiSelect @update:modelValue="renderCharts" :multiple="false" :showButton="false" />
-  <div v-if="isLoading" class="loading">Loading data...</div>
+  <div v-if="isLoading" class="loading">
+    <LoadingSpinner />
+  </div>
   <div v-else-if="Object.keys(chartData).length > 0">
     <div class="container-fluid">
       <div class="row">
@@ -36,7 +38,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { DumbbellChart } from 'outbreakInfo';
+import { DumbbellChart, LoadingSpinner } from 'outbreakInfo';
 import {getRegionToGffFeatureMappingForMutations, getRegionToGffFeatureMappingForVariants, getVariantMutationLag} from "../services/munninService.js";
 import LineageMultiSelect from "./LineageMultiSelect.vue";
 

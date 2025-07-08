@@ -17,7 +17,7 @@
     </div>
       
     <div v-if="isLoading" class="loading-message">
-      Loading data...
+      <LoadingSpinner />
     </div>
 
     <div v-else-if="error" class="error-message">
@@ -42,7 +42,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { HistogramChart } from 'outbreakInfo';
+import { HistogramChart, LoadingSpinner } from 'outbreakInfo';
 import { getVariantFrequency } from '../services/munninService.js';
 
 const chartColor = '#2c3e50';

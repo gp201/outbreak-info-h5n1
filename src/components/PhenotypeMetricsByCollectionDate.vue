@@ -2,7 +2,7 @@
   <div class="host-view">
     <h4>Phenotype over time</h4>
     <div v-if="isLoading">
-      Loading data...
+      <LoadingSpinner />
     </div>
 
     <div v-else-if="chartData.length > 0" class="chart-wrapper mt-3">
@@ -32,7 +32,7 @@
 
 <script setup>
 import {onMounted, ref, watch} from 'vue';
-import { TimeSeriesBarChart, TextInput } from 'outbreakInfo';
+import { TimeSeriesBarChart, TextInput, LoadingSpinner } from 'outbreakInfo';
 import {
   getPhenotypeMetricCountsForMutationsByCollectionDate,
   getPhenotypeMetricCountsForVariantsByCollectionDate, getPhenotypeMetricValueByMutationsQuantile,

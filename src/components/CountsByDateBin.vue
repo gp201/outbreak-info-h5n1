@@ -19,7 +19,7 @@
   </div>
 
     <div v-if="isLoading" class="loading-message">
-      Loading data...
+      <LoadingSpinner />
     </div>
 
     <div v-else-if="error" class="error-message">
@@ -43,7 +43,7 @@
 
 <script setup>
 import {onMounted, ref} from 'vue';
-import { TimeSeriesBarChart } from 'outbreakInfo';
+import { TimeSeriesBarChart, LoadingSpinner } from 'outbreakInfo';
 import { getVariantCountByDateBin } from '../services/munninService.js';
 
 const props = defineProps({

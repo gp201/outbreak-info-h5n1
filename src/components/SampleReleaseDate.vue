@@ -2,7 +2,9 @@
   <div class="release-date-view">
     <h1>Sample release date</h1>
     
-    <div v-if="isLoading">Loading data...</div>
+    <div v-if="isLoading">
+      <LoadingSpinner />
+    </div>
     <div v-else-if="error">{{ error }}</div>
     
     <TimeSeriesChart
@@ -20,7 +22,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { TimeSeriesChart, outbreakInfoColorPalette } from 'outbreakInfo';
+import { TimeSeriesChart, outbreakInfoColorPalette, LoadingSpinner } from 'outbreakInfo';
 import { getSampleReleaseDate } from '../services/munninService.js';
 
 const chartData = ref([]);

@@ -3,7 +3,9 @@
   <hr>
   <LineageMultiSelect @lineagesSelectedButtonClick="getAllMutationProfiles" />
 
-  <div v-if="isLoading" class="loading">Loading data...</div>
+  <div v-if="isLoading" class="loading">
+    <LoadingSpinner />
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div v-for="(data, gene) in chartData" :key="gene" class="col-xl-6 col-lg-6 col-md-12 mb-6 chart-section">
@@ -39,7 +41,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { BarChart } from 'outbreakInfo';
+import { BarChart, LoadingSpinner } from 'outbreakInfo';
 import { getLineageMutationProfile } from '../services/munninService.js';
 import LineageMultiSelect from "./LineageMultiSelect.vue";
 

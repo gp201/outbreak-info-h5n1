@@ -4,7 +4,9 @@
 
     <LineageMultiSelect @lineagesSelectedButtonClick="getAllLineageMutationIncidence" />
 
-    <div v-if="isLoading" class="loading">Loading data...</div>
+    <div v-if="isLoading" class="loading">
+      <LoadingSpinner />
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div v-for="(data, gene) in chartData" :key="gene" class="col-xl-6 col-lg-6 col-md-12 mb-6 chart-section">
@@ -40,7 +42,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { HeatMapChart } from 'outbreakInfo';
+import { HeatMapChart, LoadingSpinner } from 'outbreakInfo';
 import {
   getLineageMutationIncidence,
   getRegionToGffFeatureMappingForMutations

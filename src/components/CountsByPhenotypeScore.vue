@@ -34,8 +34,9 @@
 
   <div class="row">
     <div class="col col-md-6">
-<!--      TODO: Import LoadingComponent from component library -->
-      <div v-if="isLoadingChart" class="loading">Loading data...</div>
+      <div v-if="isLoadingChart" class="loading">
+        <LoadingSpinner />
+      </div>
       <div v-else-if="error" class="error">{{ error }}</div>
       <scatter-chart
           v-else
@@ -84,7 +85,7 @@
 
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
-import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph } from 'outbreakInfo';
+import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 

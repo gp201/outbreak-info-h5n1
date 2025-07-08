@@ -1,7 +1,9 @@
 <template>
   <div class="row">
     <div class="col col-md-6">
-      <div v-if="isLoadingChart" class="loading">Loading data...</div>
+      <div v-if="isLoadingChart" class="loading">
+        <LoadingSpinner />
+      </div>
       <div v-else-if="error" class="error">{{ error }}</div>
       <div v-for="(value, key) in transformedData" :key="key">
         <h4>{{ lineageSystemLabels[key] }}</h4>
@@ -58,7 +60,7 @@
 
 <script setup>
 import {ref, onMounted, watch} from 'vue';
-import { BarChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, PointRangeChart } from 'outbreakInfo';
+import { BarChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, PointRangeChart, LoadingSpinner } from 'outbreakInfo';
 import { getLineageCountBySample, getLineageSummaryStatsBySample, getSampleCountByField } from '../services/munninService.js';
 
 const transformedData = ref({});

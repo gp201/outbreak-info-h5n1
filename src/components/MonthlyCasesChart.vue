@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Monthly Cases</h1>
-    <div v-if="isLoading" class="loading">Loading data...</div>
+    <div v-if="isLoading" class="loading">
+      <LoadingSpinner />
+    </div>
     <div v-else-if="error" class="error">{{ error }}</div>
     <TimeSeriesBarChart v-else :data="monthlyData" />
   </div>
@@ -9,7 +11,7 @@
 
 <script setup>
 //import { ref, onMounted } from 'vue';
-import { TimeSeriesBarChart } from 'outbreakInfo';
+import { TimeSeriesBarChart, LoadingSpinner } from 'outbreakInfo';
 // TODO: Import API service
 
 
