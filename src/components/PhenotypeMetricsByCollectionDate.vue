@@ -24,7 +24,7 @@
           :marginBottom="70"
           :marginLeft="100"
           xLabel="Time"
-          yLabel="Proportion of samples"
+          yLabel="Proportion of unique mutations"
           :rangeColor="outbreakInfoColorPalette.slice(4,20)"
       />
       <TimeSeriesBarChart
