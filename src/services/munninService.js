@@ -519,3 +519,46 @@ export async function getMutationCountsByCollectionDate(position_aa = "", alt_aa
     return [];
   }
 }
+
+async function getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate(dataField,
+                                                                    phenotype_metric_name,
+                                                                    q = null,
+                                                                    date_bin= "month",
+                                                                    max_span_days = 31) {
+  if(dataField !== "Mutations" && dataField !== "Variants") {
+    return [];
+  }
+  try {
+    let url = `v0/phenotype_metric_values:for${dataField}AggregateBySampleAndCollectionDate?phenotype_metric_name=${encodeURIComponent(phenotype_metric_name)}`
+    url += `&date_bin=${encodeURIComponent(date_bin)}`;
+    url += `&max_span_days=${encodeURIComponent(max_span_days)}`;
+    if(q !== "" && q!== null)
+      url += `&q=${encodeURIComponent(q)}`;
+    return await makeRequest(url);
+  } catch (error) {
+    console.error(`Error fetching phenotype metrics by collection date`, error);
+    return [];
+  }
+}
+
+export async function getAggregatePhenotypeMetricValuesForMutationsBySampleAndCollectionDate(phenotype_metric_name,
+                                                                                             q = null,
+                                                                                             date_bin= "month",
+                                                                                             max_span_days = 31) {
+  return await getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate("Mutations",
+      phenotype_metric_name,
+      q = null,
+      date_bin= "month",
+      max_span_days = 31);
+}
+
+export async function getAggregatePhenotypeMetricValuesForVariantsBySampleAndCollectionDate(phenotype_metric_name,
+                                                                                             q = null,
+                                                                                             date_bin= "month",
+                                                                                             max_span_days = 31) {
+  return await getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate("Variants",
+      phenotype_metric_name,
+      q = null,
+      date_bin= "month",
+      max_span_days = 31);
+}

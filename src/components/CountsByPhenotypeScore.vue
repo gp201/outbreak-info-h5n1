@@ -85,6 +85,14 @@
   </div>
   <div class="row mb-5">
     <div class="col col-md-12">
+      <AggregatePhenotypeMetricsBySampleAndCollectionDate :selectedPhenotypeScore="selectedPhenotypeScore"
+                                                          :selectedHost="selectedHost"
+                                                          :selectedIsolationSource="selectedIsolationSource"
+                                                          :dataField="props.dataField" />
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col col-md-12">
       <AnnotationsByCollectionDate :dataField="props.dataField" />
     </div>
   </div>
@@ -96,6 +104,7 @@ import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, Loa
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
+import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePhenotypeMetricsBySampleAndCollectionDate.vue";
 
 const selectedPhenotypeScore = ref('sa26_usage_increase');
 const useLogScale = ref(true);
