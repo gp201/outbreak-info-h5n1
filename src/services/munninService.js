@@ -6,6 +6,15 @@ async function makeRequest(endpoint) {
   return await response.json();
 }
 
+export async function getPhenotypeMetrics() {
+  try {
+    return await makeRequest("phenotype_metrics");
+  } catch (error) {
+    console.error(`Error fetching phenotype metrics`, error);
+    return [];
+  }
+}
+
 export async function getSampleCountByField(field = "host", size = null){
   try {
     const data = await makeRequest(`count/samples/by/${field}`);
