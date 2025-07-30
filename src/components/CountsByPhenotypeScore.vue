@@ -1,26 +1,21 @@
 <template>
-  <h2>{{ title }}</h2>
-  <hr>
+<!--  <h5>{{ title }}</h5>-->
+<!--  <hr>-->
+  <div class="row">
+    <div class="col mb-3">
+      <InfoComponent :embedded="true">
+        <p class="d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </InfoComponent>
+    </div>
+  </div>
+
   <form>
     <div class="row">
-      <div class="col mb-3">
-        <label :for="elementIds.phenotypeField" class="form-label">Phenotype</label>
-<!--        TODO: Import MultiSelectComponent from component library -->
-        <select :id="elementIds.phenotypeField" v-model="selectedPhenotypeScore" class="form-select">
-          <optgroup label="Deep mutational scanning">
-            <option value="stability">Stability</option>
-            <option value="ferret_sera_escape">Ferret sera escape</option>
-            <option value="mouse_sera_escape">Mouse sera escape</option>
-            <option value="sa26_usage_increase">Increase in 2,6 sialic acid receptor usage</option>
-            <option value="entry_in_293t_cells">Entry in 293T cells</option>
-          </optgroup>
-          <optgroup label="Computational prediction">
-            <option value="evescape_sigmoid">EVE</option>
-          </optgroup>
-        </select>
+      <div class="col col-12">
+        <h5>Select a phenotype</h5>
+        <PhenotypicMetricNamesMultiSelect class="inline" @update:modelValue="updatedPhenotypeScore" />
       </div>
-
-      <div class="col log-scale-toggle mb-3 d-flex align-items-end">
+      <div class="col mb-3">
         <div class="mb-2 mt-2 form-check">
 <!--        TODO: Import CheckBoxComponent from component library -->
           <input type="checkbox" v-model="useLogScale" class="form-check-input" :id="elementIds.logScale">
@@ -100,13 +95,14 @@
 
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
-import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner } from 'outbreakInfo';
+import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner, InfoComponent } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
 import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePhenotypeMetricsBySampleAndCollectionDate.vue";
+import PhenotypicMetricNamesMultiSelect from "./PhenotypicMetricNamesMultiSelect.vue";
 
-const selectedPhenotypeScore = ref('sa26_usage_increase');
+const selectedPhenotypeScore = ref('');
 const useLogScale = ref(true);
 const chartData = ref([]);
 const isLoadingChart = ref(false);
@@ -153,8 +149,10 @@ async function loadData() {
   error.value = null;
 
   try {
-    // TODO: Get protein ID from API
-    chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
+    if(selectedPhenotypeScore.value !== ''){
+      // TODO: Get protein ID from API
+      chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
+    }
     hostData.value = await getSampleCountByField("host");
     isolationSourceData.value = await getSampleCountByField("isolation_source");
 
@@ -168,6 +166,10 @@ async function loadData() {
   } finally {
     isLoadingChart.value = false;
   }
+}
+
+async function updatedPhenotypeScore(phenotypeScore) {
+  selectedPhenotypeScore.value = phenotypeScore;
 }
 
 onMounted(loadData);
