@@ -6,5 +6,13 @@
     "phenotypeByCollectionDate": "If there is evolutionary pressure to select for a given phenotype, we would expect the proportion of distinct mutations with a measurement over a threshold to increase over time.",
     "phenotypeAggregateBySample": "We aggregate phenotypic measurements for every sample by summing over all the sites in the genome.",
     "literatureAnnotationsOverTime": "We rely on <a target=\"_blank\" href=\"https://izsvenezie-virology.github.io/FluMut/\">FluMut</a>, a resource for annotations of mutations in influenza from scientific literature, to highlight the number of mutations with a given annotation over time."
+  },
+  "lineageSurveillance": {
+    "lineageCountsOverTime": "We use <a target=\"_blank\" href=\"https://github.com/USDA-VS/GenoFLU\">USDA GenoFLU</a> to classify consensus genomes into lineages within clade 2.3.4.4b.",
+    "lineageCounts": "We use <a target=\"_blank\" href=\"https://github.com/USDA-VS/GenoFLU\">USDA GenoFLU</a> to classify consensus genomes into lineages within clade 2.3.4.4b. We also use a custom nomenclature to designate <a href=\"https://github.com/andersen-lab/Freyja-barcodes\">Freyja barcodes</a> to determine the presence of multiple lineages in <i>aggregate</i> samples"
+  },
+  "lineageComparison": {
+    "compareMutations": "You can select multiple lineages to compare amino acid mutations that occur in at least 75% of consensus genomes that belong to a lineage",
+    "mutationProfile": "You can select multiple lineages to compare mutation profiles i.e., the proportion of nucleotide mutations observed in consensus genomes."
   }
 }

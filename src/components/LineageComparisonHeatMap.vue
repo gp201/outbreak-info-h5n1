@@ -1,7 +1,9 @@
 <template>
   <div class="host-view">
-    <h4>Compare mutations across lineages</h4>
-    <hr>
+    <h5>Compare mutations across lineages</h5>
+    <InfoComponent :embedded="true">
+      <span v-html="helpText.lineageComparison.compareMutations"></span>
+    </InfoComponent>
 
     <LineageMultiSelect @lineagesSelectedButtonClick="getAllLineageMutationIncidence" />
 
@@ -43,12 +45,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { HeatMapChart, LoadingSpinner } from 'outbreakInfo';
+import { HeatMapChart, LoadingSpinner, InfoComponent } from 'outbreakInfo';
 import {
   getLineageMutationIncidence,
   getRegionToGffFeatureMappingForMutations
 } from '../services/munninService.js';
 import LineageMultiSelect from "./LineageMultiSelect.vue";
+import helpText from "../helpInfo/helpInfoText.json";
 
 const chartData = ref([]);
 const isLoading = ref(false);

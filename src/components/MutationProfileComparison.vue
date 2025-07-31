@@ -1,6 +1,9 @@
 <template>
-  <h4>Mutation profile comparison</h4>
-  <hr>
+  <h5>Mutation profile comparison</h5>
+  <InfoComponent :embedded="true">
+    <span v-html="helpText.lineageComparison.mutationProfile"></span>
+  </InfoComponent>
+
   <LineageMultiSelect @lineagesSelectedButtonClick="getAllMutationProfiles" />
 
   <div v-if="isLoading" class="loading">
@@ -41,9 +44,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import { BarChart, LoadingSpinner } from 'outbreakInfo';
+import { BarChart, LoadingSpinner, InfoComponent } from 'outbreakInfo';
 import { getLineageMutationProfile } from '../services/munninService.js';
 import LineageMultiSelect from "./LineageMultiSelect.vue";
+import helpText from "../helpInfo/helpInfoText.json";
 
 const chartData = ref([]);
 const isLoading = ref(false);

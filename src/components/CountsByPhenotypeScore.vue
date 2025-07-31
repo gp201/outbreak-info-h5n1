@@ -1,6 +1,4 @@
 <template>
-<!--  <h5>{{ title }}</h5>-->
-<!--  <hr>-->
   <div class="row">
     <div class="col mb-3">
       <InfoComponent :embedded="true">
@@ -72,7 +70,7 @@
     </div>
 
   </div>
-  <div class="row">
+  <div class="row mb-5">
     <div class="col col-md-12">
       <PhenotypeMetricsByCollectionDate
           :selectedPhenotypeScore="selectedPhenotypeScore"
