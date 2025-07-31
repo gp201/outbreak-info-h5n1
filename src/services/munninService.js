@@ -492,16 +492,14 @@ export async function getAllAnnotationEffects() {
   }
 }
 
-export async function getVariantFrequencyByCollectionDate(position_aa = "", alt_aa = "", gff_feature="", q = null, date_bin= "month", max_span_days = 31) {
-  if(position_aa === "" || alt_aa === "" || gff_feature === "") {
+export async function getVariantFrequencyByCollectionDate(q = null, date_bin= "month", max_span_days = 31) {
+  if(q === "") {
     return [];
   }
   try {
-    let url = `v0/variants:freqByCollectionDate?alt_aa=${encodeURIComponent(alt_aa)}&position_aa=${encodeURIComponent(position_aa)}&gff_feature=${encodeURIComponent(gff_feature)}`
+    let url = `v0/variants:freqByCollectionDate?q=${encodeURIComponent(q)}`
     url += `&date_bin=${encodeURIComponent(date_bin)}`;
     url += `&max_span_days=${encodeURIComponent(max_span_days)}`;
-    if(q !== "" && q!== null)
-      url += `&q=${encodeURIComponent(q)}`;
     return await makeRequest(url);
   } catch (error) {
     console.error(`Error fetching phenotype metrics by collection date`, error);
