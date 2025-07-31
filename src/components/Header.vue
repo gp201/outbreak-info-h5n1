@@ -46,12 +46,6 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/search"
-                         :class="{ active: $route.path === '/search' }">
-              Search mutations
-            </router-link>
-          </li>
-          <li class="nav-item">
             <router-link class="nav-link" to="/metadata"
                          :class="{ active: $route.path === '/metadata' }">
               Metadata

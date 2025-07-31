@@ -32,11 +32,6 @@ const routes = [
         component: MetadataView
     },
     {
-        path: '/search',
-        name: 'Search',
-        component: SearchView
-    },
-    {
         path: '/integrated-surveillance',
         name: 'Integrated surveillance',
         component: VariantMutationSurveillanceView
