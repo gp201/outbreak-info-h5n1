@@ -10,7 +10,7 @@
   <form>
     <div class="row">
       <div class="col col-12">
-        <h5>Select a phenotype</h5>
+        <h5>Explore by phenotype</h5>
         <InfoComponent :embedded="true">
           <span v-html="helpText.mutationSurveillance.phenotype"></span>
         </InfoComponent>

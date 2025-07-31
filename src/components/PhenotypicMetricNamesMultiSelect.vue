@@ -2,7 +2,7 @@
   <MultiSelectComponent
       :multiple="props.multiple"
       :options="phenotypes"
-      label="Select a phenotypes"
+      label="Select a phenotype"
       placeholder="Select a phenotype"
       :showButton="props.showButton"
       @buttonClick="phenotypeSelectedButtonClick"
