@@ -295,7 +295,7 @@ export async function getLineageMutationIncidence(lineage, lineage_system_name, 
   }
   try {
     let url = `v0/lineages:mutationIncidence`;
-    url += `?lineage=${encodeURIComponent(lineage)}&change_bin=${encodeURIComponent(change_bin)}&lineage_system_name=${lineage_system_name}`;
+    url += `?lineage=${encodeURIComponent(lineage)}&change_bin=${encodeURIComponent(change_bin)}&lineage_system_name=${lineage_system_name}&prevalence_threshold=${min_prevalence}`;
     if(q!==null) {
       url += `&q=${q}`;
     }
@@ -552,9 +552,9 @@ export async function getAggregatePhenotypeMetricValuesForMutationsBySampleAndCo
                                                                                              max_span_days = 31) {
   return await getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate("Mutations",
       phenotype_metric_name,
-      q = null,
-      date_bin= "month",
-      max_span_days = 31);
+      q,
+      date_bin,
+      max_span_days);
 }
 
 export async function getAggregatePhenotypeMetricValuesForVariantsBySampleAndCollectionDate(phenotype_metric_name,
@@ -563,7 +563,7 @@ export async function getAggregatePhenotypeMetricValuesForVariantsBySampleAndCol
                                                                                              max_span_days = 31) {
   return await getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate("Variants",
       phenotype_metric_name,
-      q = null,
-      date_bin= "month",
-      max_span_days = 31);
+      q,
+      date_bin,
+      max_span_days);
 }

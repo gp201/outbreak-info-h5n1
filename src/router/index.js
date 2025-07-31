@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MetadataView from "../views/MetadataView.vue";
 import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
-import SearchView from "../views/SearchView.vue";
 import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
 import LineageComparisonView from "../views/LineageComparisonView.vue";
 import VariantMutationSurveillanceView from "../views/VariantMutationSurveillanceView.vue";

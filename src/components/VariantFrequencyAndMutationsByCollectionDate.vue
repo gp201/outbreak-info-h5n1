@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import { TimeSeriesPointRangeChart, TimeSeriesBarChart, LoadingSpinner } from 'outbreakInfo';
 import {
   getVariantFrequencyByCollectionDate,
