@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col col-12">
         <h5>Explore by phenotype</h5>
-        <InfoComponent :embedded="true">
+        <InfoComponent :embedded="true" class="mb-3">
           <span v-html="helpText.mutationSurveillance.phenotype"></span>
         </InfoComponent>
         <PhenotypicMetricNamesMultiSelect class="inline" @update:modelValue="updatedPhenotypeScore" />
@@ -89,7 +89,9 @@
   </div>
   <div class="row mb-5">
     <div class="col col-md-12">
-      <AnnotationsByCollectionDate :dataField="props.dataField" />
+      <AnnotationsByCollectionDate :dataField="props.dataField"
+                                   :selectedHost="selectedHost"
+                                   :selectedIsolationSource="selectedIsolationSource" />
     </div>
   </div>
 </template>

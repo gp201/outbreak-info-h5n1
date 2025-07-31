@@ -464,7 +464,7 @@ async function getAnnotationsByDataFieldAndCollectionDate(dataField, effectDetai
   if(dataField !== "Mutations" && dataField !== "Variants") {
     return [];
   }
-  if(effectDetail === null) {
+  if(effectDetail === null || effectDetail === "") {
     return [];
   }
   try {
