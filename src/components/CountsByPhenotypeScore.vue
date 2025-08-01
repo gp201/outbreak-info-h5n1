@@ -17,13 +17,7 @@
         <PhenotypicMetricNamesMultiSelect class="inline" @update:modelValue="updatedPhenotypeScore" />
       </div>
       <div class="col mb-3">
-        <div class="mb-2 mt-2 form-check">
-<!--        TODO: Import CheckBoxComponent from component library -->
-          <input type="checkbox" v-model="useLogScale" class="form-check-input" :id="elementIds.logScale">
-          <label class="form-check-label" :for="elementIds.logScale">
-            Log scale
-          </label>
-        </div>
+        <CheckBox v-model="useLogScale" text="Log scale" />
       </div>
     </div>
   </form>
@@ -98,7 +92,7 @@
 
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
-import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner, InfoComponent } from 'outbreakInfo';
+import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner, InfoComponent, CheckBox } from 'outbreakInfo';
 import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
@@ -117,11 +111,6 @@ const selectedHost = ref({key: null, value: null});
 
 const isolationSourceData = ref([]);
 const selectedIsolationSource = ref({key: null, value: null});
-
-const elementIds = computed(() => ({
-  phenotypeField: `dmsField-${uuid}`,
-  logScale: `logScale-${uuid}`
-}));
 
 const props = defineProps({
   dataField: { type: String, default: "variants" },
