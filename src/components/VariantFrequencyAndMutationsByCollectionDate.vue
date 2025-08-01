@@ -1,6 +1,11 @@
 <template>
 
-  <SelectLineageAndProteinAndAltAA @selectSite="loadChart" :serviceFunction="gffFeatureToRegionMappingFunction" />
+  <div class="row">
+    <div class="col col-md-6 mt-3">
+      <SelectLineageAndProteinAndAltAA @selectSite="loadChart" :serviceFunction="gffFeatureToRegionMappingFunction" />
+    </div>
+  </div>
+
 
   <div v-if="isLoading" class="loading-message">
     <LoadingSpinner />

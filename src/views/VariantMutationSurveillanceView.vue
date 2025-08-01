@@ -2,7 +2,7 @@
   <div class="container mt-3">
     <div class="row">
       <h2>First detection of mutation at host- and population-level</h2>
-      <InfoComponent :embedded="true">
+      <InfoComponent :embedded="true" class="mb-3">
         <span v-html="helpText.variantMutationSurveillance.firstDetection"></span>
       </InfoComponent>
       <VariantMutationLag />
