@@ -23,10 +23,22 @@ const props = defineProps({
 const emit = defineEmits(['phenotypeSelectedButtonClick', 'update:modelValue']);
 const phenotypes = ref([]);
 
+// TODO: Pull these labels from database
+const phenotypeMetricLabels = {
+  "entry_in_293t_cells": "Entry in 293T cells",
+  "sa26_usage_increase": "Increase in a2,6 sialic acid usage",
+  "mouse_sera_escape": "Neutralization escape cause for mouse sera",
+  "stability": "HA stability",
+  "ferret_sera_escape": "Neutralization escape cause for ferret sera",
+  "evescape_sigmoid": "EVE",
+}
+
 async function getSelectPhenotypeMetrics(){
   const resp = await getPhenotypeMetrics();
-  return resp.map(phenotype => ({
-    label: phenotype.name,
+  return resp.filter(
+      phenotype => phenotype.name in phenotypeMetricLabels
+  ).map(phenotype => ({
+    label: phenotypeMetricLabels[phenotype.name],
     value: phenotype.name,
     ...phenotype
   }));

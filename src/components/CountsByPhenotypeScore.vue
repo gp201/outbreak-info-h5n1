@@ -31,14 +31,17 @@
       <scatter-chart
           v-else
           :data="chartData"
-          :x-key="'phenotypeScore'"
-          :y-key="'count'"
+          :xKey="'phenotypeScore'"
+          :yKey="'count'"
           :pointColor="outbreakInfoColorPalette[0]"
-          :title-key="'key'"
-          :x-label="selectedPhenotypeScore"
-          :y-label="'Number of samples'"
-          :log-scale="useLogScale"
-          :tip-format-string="'Mutation: {key}\nCount: {y}\nDMS: {x}'"
+          :titleKey="'key'"
+          :yLabel="'Number of samples'"
+          :logScale="useLogScale"
+          :tipFormatString="'Mutation: {key}\nCount: {y}\nDMS: {x}'"
+          :showMinMaxXLabels="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels')"
+          :minXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'minXLabel') : null"
+          :maxXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'maxXLabel') : null"
+          :xLabel="!getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'xLabel') : null"
       />
     </div>
 
@@ -105,9 +108,44 @@ const useLogScale = ref(true);
 const chartData = ref([]);
 const isLoadingChart = ref(false);
 const error = ref(null);
-const uuid = useId();
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
+
+// TODO: Generalize the storage of these labels
+const phenotypeMetricAxesLabels = {
+  "entry_in_293t_cells": {
+    minXLabel: "Impaired entry in 293T cells",
+    maxXLabel: "Improved entry in 293T cells",
+    showMinMaxXLabels: true,
+  },
+  "sa26_usage_increase": {
+    showMinMaxXLabels: false,
+    xLabel: "Increase in a2,6 sialic acid usage"
+  },
+  "stability": {
+    showMinMaxXLabels: false,
+    xLabel: "Increase in HA stability"
+  },
+  "mouse_sera_escape": {
+    showMinMaxXLabels: false,
+    xLabel: "Increase in neutralization escape for mouse sera"
+  },
+  "ferret_sera_escape": {
+    showMinMaxXLabels: false,
+    xLabel: "Increase in neutralization escape for ferret sera"
+  },
+  "evescape_sigmoid": {
+    showMinMaxXLabels: false,
+    xLabel: "Increase in predicted fitness"
+  }
+}
+
+function getAxesAttributes(phenotypeScore, attribute) {
+  if(!(phenotypeScore in phenotypeMetricAxesLabels))
+    return null;
+  console.log(phenotypeScore)
+  return phenotypeMetricAxesLabels[phenotypeScore][attribute];
+}
 
 const isolationSourceData = ref([]);
 const selectedIsolationSource = ref({key: null, value: null});
@@ -137,21 +175,32 @@ async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, ph
   return getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
 }
 
+async function loadHostAndIsolationSourceData(){
+  isLoadingChart.value = true;
+  try {
+    hostData.value = await getSampleCountByField("host");
+    isolationSourceData.value = await getSampleCountByField("isolation_source");
+  } catch (err) {
+    console.error('Error loading host and isolation source data', err);
+  } finally {
+    isLoadingChart.value = false;
+  }
+}
+
 async function loadData() {
+  if(selectedPhenotypeScore.value === '')
+    return;
   isLoadingChart.value = true;
   error.value = null;
 
   try {
-    if(selectedPhenotypeScore.value !== ''){
-      // TODO: Get protein ID from API
-      chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
-    }
-    hostData.value = await getSampleCountByField("host");
-    isolationSourceData.value = await getSampleCountByField("isolation_source");
+    // TODO: Get protein ID from API
+    chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
 
-    if (chartData.value.length === 0) {
-      error.value = 'No data found for the selected metric';
-    }
+
+    // if (chartData.value.length === 0) {
+    //   error.value = 'No data found for the selected metric';
+    // }
   } catch (err) {
     console.error('Error loading DMS data:', err);
     error.value = 'Failed to load data. Please try again later.';
@@ -165,7 +214,7 @@ async function updatedPhenotypeScore(phenotypeScore) {
   selectedPhenotypeScore.value = phenotypeScore;
 }
 
-onMounted(loadData);
+onMounted(loadHostAndIsolationSourceData);
 watch(() => selectedPhenotypeScore.value, loadData);
 watch(() => selectedHost.value, loadData);
 watch(() => selectedIsolationSource.value, loadData);
