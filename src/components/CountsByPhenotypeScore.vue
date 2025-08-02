@@ -14,7 +14,7 @@
         <InfoComponent :embedded="true" class="mb-3">
           <span v-html="helpText.mutationSurveillance.phenotype"></span>
         </InfoComponent>
-        <PhenotypicMetricNamesMultiSelect class="inline" @update:modelValue="updatedPhenotypeScore" />
+        <PhenotypicMetricNamesMultiSelect class="inline" v-model="selectedPhenotypeScore" />
       </div>
       <div class="col mb-3">
         <CheckBox v-model="useLogScale" text="Log scale" />
@@ -103,7 +103,7 @@ import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePheno
 import PhenotypicMetricNamesMultiSelect from "./PhenotypicMetricNamesMultiSelect.vue";
 import helpText from '../helpInfo/helpInfoText.json';
 
-const selectedPhenotypeScore = ref('');
+const selectedPhenotypeScore = ref("sa26_usage_increase");
 const useLogScale = ref(true);
 const chartData = ref([]);
 const isLoadingChart = ref(false);
@@ -143,7 +143,6 @@ const phenotypeMetricAxesLabels = {
 function getAxesAttributes(phenotypeScore, attribute) {
   if(!(phenotypeScore in phenotypeMetricAxesLabels))
     return null;
-  console.log(phenotypeScore)
   return phenotypeMetricAxesLabels[phenotypeScore][attribute];
 }
 
@@ -210,11 +209,11 @@ async function loadData() {
   }
 }
 
-async function updatedPhenotypeScore(phenotypeScore) {
-  selectedPhenotypeScore.value = phenotypeScore;
-}
+onMounted(() => {
+  loadHostAndIsolationSourceData();
+  loadData();
+});
 
-onMounted(loadHostAndIsolationSourceData);
 watch(() => selectedPhenotypeScore.value, loadData);
 watch(() => selectedHost.value, loadData);
 watch(() => selectedIsolationSource.value, loadData);

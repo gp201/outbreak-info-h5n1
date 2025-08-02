@@ -126,7 +126,7 @@ async function handleSubmit(value) {
   loadData();
 }
 
-// onMounted(loadData);
+onMounted(loadData);
 watch(() => props.selectedPhenotypeScore, () => {
   phenotypeMetricValueThreshold.value.phenotype_metric_value = null;
   loadData();

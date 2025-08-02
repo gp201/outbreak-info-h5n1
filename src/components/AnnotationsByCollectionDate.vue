@@ -9,7 +9,7 @@
       label="Select an annotation effect. You can filter by host and isolation source using the filters above."
       placeholder="Select annotation effect"
       :showButton="false"
-      @update:modelValue="annotationSelected"
+      v-model="selectedEffectDetail"
   />
 
   <div class="row">
@@ -83,7 +83,7 @@ const chartDataCounts = ref([]);
 const allAnnotationEffects = ref([]);
 const isLoading = ref(false);
 const error = ref(null);
-const selectedEffectDetail = ref(null);
+const selectedEffectDetail = ref("Increased virus binding to α2-6");
 
 
 const props = defineProps({
@@ -136,11 +136,11 @@ async function renderChart() {
   }
 }
 
-async function annotationSelected(value) {
-  selectedEffectDetail.value = value;
-}
+onMounted(() => {
+  loadData();
+  renderChart();
+});
 
-onMounted(loadData);
 watch(() => props.selectedHost, () => {
   renderChart();
 }, { deep: true });
@@ -149,7 +149,6 @@ watch(() => props.selectedIsolationSource, () => {
   renderChart();
 }, { deep: true });
 
-// TODO: Pass selectedEffectDetails as model to MultiSelectComponent
 watch(() => selectedEffectDetail, () => {
   renderChart();
 }, { deep: true });

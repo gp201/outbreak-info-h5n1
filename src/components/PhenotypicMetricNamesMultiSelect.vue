@@ -6,6 +6,7 @@
       placeholder="Select a phenotype"
       :showButton="props.showButton"
       @buttonClick="phenotypeSelectedButtonClick"
+      v-model="props.modelValue"
       @update:modelValue="updateModelValue"
   />
 </template>
@@ -17,10 +18,16 @@ import { getPhenotypeMetrics } from "../services/munninService.js";
 
 const props = defineProps({
   multiple: { type: Boolean, default: false },
+  modelValue: { type: Array || String, default: () => [] },
   showButton: { type: Boolean, default: false }
 });
 
-const emit = defineEmits(['phenotypeSelectedButtonClick', 'update:modelValue']);
+const emit = defineEmits(['update:modelValue']);
+
+async function updateModelValue(selectedLineages) {
+  emit('update:modelValue', selectedLineages);
+}
+
 const phenotypes = ref([]);
 
 // TODO: Pull these labels from database
@@ -48,14 +55,9 @@ async function loadData() {
   phenotypes.value = await getSelectPhenotypeMetrics();
 }
 
-async function phenotypeSelectedButtonClick(selectedPhenotypes) {
-  emit('phenotypeSelectedButtonClick', selectedPhenotypes);
+async function phenotypeSelectedButtonClick(phenotypes) {
+  props.modelValue = phenotypes;
 }
-
-async function updateModelValue(selectedPhenotypes) {
-  emit('update:modelValue', selectedPhenotypes);
-}
-
 
 onMounted(loadData)
 
