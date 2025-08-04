@@ -89,8 +89,8 @@ async function loadChart(selectedSite) {
 
   try {
     let q = `position_aa=${selectedSite.site} ^ gff_feature=${selectedSite.gffFeature}`
-    if (selectedSite.lineage !== null && selectedSite.lineage !== '') {
-     q += `^ lineage_name=${selectedSite.lineage}`;
+    if (selectedSite.lineage !== null && selectedSite.lineage.lineage_name !== null) {
+     q += `^ lineage_name=${selectedSite.lineage.lineage_name}`; // TODO: Include lineage_system_name as well
     }
     if (selectedSite.altAA !== '' && selectedSite.altAA !== null) {
       q += ' ^ alt_aa=' + selectedSite.altAA;
