@@ -21,7 +21,7 @@
           :marginBottom="70"
           :marginLeft="100"
           :marginTop="50"
-          :yLabel="selectedPhenotypeScore"
+          :yLabel="selectedPhenotypeScoreLabel"
           :width="1200"
           :height="300"
       />
@@ -30,13 +30,14 @@
 </template>
 
 <script setup>
-import {onMounted, ref, watch} from 'vue';
+import {computed, onMounted, ref, watch} from 'vue';
 import { TimeSeriesPointRangeChart, LoadingSpinner, InfoComponent, outbreakInfoColorPalette } from 'outbreakInfo';
 import {
   getAggregatePhenotypeMetricValuesForVariantsBySampleAndCollectionDate,
   getAggregatePhenotypeMetricValuesForMutationsBySampleAndCollectionDate,
 } from "../services/munninService.js";
 import helpText from "../helpInfo/helpInfoText.json";
+import {phenotypeMetricLabels} from "../constants/labels.js";
 
 const chartData = ref([])
 const isLoading = ref(false);
@@ -47,6 +48,8 @@ const props = defineProps({
   selectedHost: { type: Object, default: null },
   selectedIsolationSource: { type: Object, default: null }
 })
+
+const selectedPhenotypeScoreLabel = computed(() => phenotypeMetricLabels[props.selectedPhenotypeScore] || props.selectedPhenotypeScore);
 
 async function getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate(dataField, phenotypeMetricName, q) {
   if(dataField === "variants") {

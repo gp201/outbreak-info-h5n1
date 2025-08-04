@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref, watch} from 'vue';
+import {computed, onMounted, ref, watch} from 'vue';
 import { TimeSeriesBarChart, TextInput, LoadingSpinner, InfoComponent, outbreakInfoColorPalette } from 'outbreakInfo';
 import {
   getPhenotypeMetricCountsForMutationsByCollectionDate,
@@ -62,6 +62,7 @@ import {
   getPhenotypeMetricValueByVariantsQuantile
 } from "../services/munninService.js";
 import helpText from "../helpInfo/helpInfoText.json";
+import {phenotypeMetricLabels} from "../constants/labels.js";
 
 const chartData = ref([])
 const chartDataCounts =ref([])
@@ -75,10 +76,12 @@ const props = defineProps({
   selectedIsolationSource: { type: Object, default: null }
 })
 
+const selectedPhenotypeScoreLabel = computed(() => phenotypeMetricLabels[props.selectedPhenotypeScore] || props.selectedPhenotypeScore);
+
 function ungroupData(data, proportion = false) {
   return data.flatMap(({ date, n_gte, n }) => [
-    { key: date, value: (proportion ? n_gte/n : n_gte) ,       group: props.selectedPhenotypeScore + ' >= ' + phenotypeMetricValueThreshold.value.phenotype_metric_value },
-    { key: date, value: (proportion ? (n - n_gte)/n : n - n_gte),   group: props.selectedPhenotypeScore + ' < ' +  phenotypeMetricValueThreshold.value.phenotype_metric_value  }
+    { key: date, value: (proportion ? n_gte/n : n_gte) ,       group: selectedPhenotypeScoreLabel.value + ' >= ' + phenotypeMetricValueThreshold.value.phenotype_metric_value },
+    { key: date, value: (proportion ? (n - n_gte)/n : n - n_gte),   group: selectedPhenotypeScoreLabel.value + ' < ' +  phenotypeMetricValueThreshold.value.phenotype_metric_value  }
   ]);
 }
 

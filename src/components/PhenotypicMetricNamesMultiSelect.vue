@@ -15,6 +15,7 @@
 import { MultiSelectComponent } from 'outbreakInfo';
 import {onMounted, ref} from "vue";
 import { getPhenotypeMetrics } from "../services/munninService.js";
+import { phenotypeMetricLabels } from "../constants/labels.js";
 
 const props = defineProps({
   multiple: { type: Boolean, default: false },
@@ -25,16 +26,6 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue', 'phenotypeSelectedButtonClick']);
 
 const phenotypes = ref([]);
-
-// TODO: Pull these labels from database
-const phenotypeMetricLabels = {
-  "entry_in_293t_cells": "Entry in 293T cells",
-  "sa26_usage_increase": "Increase in a2,6 sialic acid usage",
-  "mouse_sera_escape": "Neutralization escape cause for mouse sera",
-  "stability": "HA stability",
-  "ferret_sera_escape": "Neutralization escape cause for ferret sera",
-  "evescape_sigmoid": "EVE",
-}
 
 async function getSelectPhenotypeMetrics(){
   const resp = await getPhenotypeMetrics();

@@ -77,16 +77,14 @@ import {ref, onMounted, watch, computed} from 'vue';
 import { MultiSelectComponent, InfoComponent, TimeSeriesBarChart, LoadingSpinner, outbreakInfoColorPalette } from 'outbreakInfo';
 import { getAnnotationsByVariantsAndCollectionDate, getAnnotationsByMutationsAndCollectionDate, getAllAnnotationEffects } from '../services/munninService.js';
 import helpText from "../helpInfo/helpInfoText.json";
+import { defaultValues } from "../constants/labels.js";
 
 const chartData = ref([]);
 const chartDataCounts = ref([]);
 const allAnnotationEffects = ref([]);
 const isLoading = ref(false);
 const error = ref(null);
-const selectedEffectDetailObject = ref({
-  label: "Increased virus binding to α2-6",
-  value: "Increased virus binding to α2-6"
-});
+const selectedEffectDetailObject = ref(defaultValues.effectDetail);
 
 const selectedEffectDetail = computed(() => {
   if(selectedEffectDetailObject.value === null)

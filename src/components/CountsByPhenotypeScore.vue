@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col mb-3">
       <InfoComponent :embedded="true">
-        <span class="d-inline" v-html="(dataField==='variants') ? helpText.mutationSurveillance.hostLevel : helpText.mutationSurveillance.populationLevel"></span>
+        <span class="d-inline" v-html="((dataField==='variants') ? helpText.mutationSurveillance.hostLevel : helpText.mutationSurveillance.populationLevel) + ' ' + helpText.referenceDetails"></span>
       </InfoComponent>
     </div>
   </div>
@@ -102,11 +102,9 @@ import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
 import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePhenotypeMetricsBySampleAndCollectionDate.vue";
 import PhenotypicMetricNamesMultiSelect from "./PhenotypicMetricNamesMultiSelect.vue";
 import helpText from '../helpInfo/helpInfoText.json';
+import { phenotypeMetricAxesLabels, defaultValues } from '../constants/labels.js'
 
-const selectedPhenotypeScoreObject = ref({
-  label: "Increase in a2,6 sialic acid usage",
-  value: "sa26_usage_increase"
-});
+const selectedPhenotypeScoreObject = ref(defaultValues.phenotypeScore);
 const selectedPhenotypeScore = computed(() => {
   if(selectedPhenotypeScoreObject.value === null)
     return null
@@ -119,34 +117,6 @@ const error = ref(null);
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
 
-// TODO: Generalize the storage of these labels
-const phenotypeMetricAxesLabels = {
-  "entry_in_293t_cells": {
-    minXLabel: "Impaired entry in 293T cells",
-    maxXLabel: "Improved entry in 293T cells",
-    showMinMaxXLabels: true,
-  },
-  "sa26_usage_increase": {
-    showMinMaxXLabels: false,
-    xLabel: "Increase in a2,6 sialic acid usage"
-  },
-  "stability": {
-    showMinMaxXLabels: false,
-    xLabel: "Increase in HA stability"
-  },
-  "mouse_sera_escape": {
-    showMinMaxXLabels: false,
-    xLabel: "Increase in neutralization escape for mouse sera"
-  },
-  "ferret_sera_escape": {
-    showMinMaxXLabels: false,
-    xLabel: "Increase in neutralization escape for ferret sera"
-  },
-  "evescape_sigmoid": {
-    showMinMaxXLabels: false,
-    xLabel: "Increase in predicted fitness"
-  }
-}
 
 function getAxesAttributes(phenotypeScore, attribute) {
   if(!(phenotypeScore in phenotypeMetricAxesLabels))
