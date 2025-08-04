@@ -99,10 +99,11 @@ async function getPhenotypeMetricCountsForDataFieldByCollectionDate(dataField, p
 }
 
 async function loadData() {
-  if (isLoading.value) return;
-  
   chartData.value = [];
-  if (props.selectedPhenotypeScore !== "") {
+  chartDataCounts.value = [];
+
+  if (isLoading.value) return;
+  if (props.selectedPhenotypeScore !== "" && props.selectedPhenotypeScore !== null) {
     let q = "";
     if (props.selectedHost.key !== null && props.selectedIsolationSource.key != null) {
       q = `host=${props.selectedHost.key} ^ isolation_source=${props.selectedIsolationSource.key}`
