@@ -52,12 +52,10 @@ async function loadData() {
 }
 
 async function phenotypeSelectedButtonClick(phenotypes) {
-  props.modelValue.value = phenotypes;
   emit('phenotypeSelectedButtonClick', phenotypes);
 }
 
 async function updateModelValue(phenotypes) {
-  props.modelValue.value = phenotypes;
   emit('update:modelValue', phenotypes);
 }
 

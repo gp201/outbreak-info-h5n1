@@ -38,12 +38,10 @@ async function loadData() {
 }
 
 async function gffFeatureSelectedButtonClick(selectedGffFeature) {
-  props.modelValue.value = selectedGffFeature;
   emit('gffFeatureSelectedButtonClick', selectedGffFeature);
 }
 
 async function updateModelValue(selectedGffFeature) {
-  props.modelValue.value = selectedGffFeature;
   emit('update:modelValue', selectedGffFeature);
 }
 

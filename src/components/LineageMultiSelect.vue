@@ -41,14 +41,12 @@ async function loadData() {
 }
 
 async function lineagesSelectedButtonClick(selectedLineages) {
-  props.modelValue.value = selectedLineages;
   emit('lineagesSelectedButtonClick', selectedLineages);
 }
 
 async function updateModelValue(selectedLineages) {
     // Note: If multiple and showButton is true, then do not create a watch on props.modelValue in the parent component.
     // In that case, propagate all events through lineagesSelectedButtonClick
-    props.modelValue.value = selectedLineages;
     emit('update:modelValue', selectedLineages);
 }
 
