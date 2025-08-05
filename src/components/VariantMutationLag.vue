@@ -13,8 +13,9 @@
           <div class="card shadow-sm h-100 border-light bg-transparent">
             <div class="card-header border-light">
               <h4 class="card-title text-end fw-bold text-right mb-0">
-                {{ region_or_gff_feature }}
                 <small class="text-muted">{{ region_or_gff_feature in gffFeatureToRegion ? "Segment: " + gffFeatureToRegion[region_or_gff_feature] : "" }}</small>
+                <br>
+                <span>Protein: <a target="_blank" :href="`https://www.ncbi.nlm.nih.gov/protein/${encodeURIComponent(region_or_gff_feature)}`">{{ region_or_gff_feature }}</a></span>
               </h4>
             </div>
 
