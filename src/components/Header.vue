@@ -10,7 +10,7 @@
             class="d-inline-block align-top"
             alt="Outbreak.info"
         />
-        outbreak.info
+        outbreak.info H5N1
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
