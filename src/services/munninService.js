@@ -378,12 +378,15 @@ export async function getLineageMutationProfile(lineage, lineage_system_name, q 
     if (q !== null)
       url += `?q=${q}`;
     const data = await makeRequest(url);
-    const total_alleles = data.reduce((acc, item) => acc + item.count, 0);
+    const totalAllelesByRegion = data.reduce((acc, { region, count }) => {
+      acc[region] = (acc[region] || 0) + count;
+      return acc;
+    }, {});
     const dataByRegion = data.map(item => ({
       ...item,
       lineage: lineage,
       key: item.ref_nt + "->" + item.alt_nt,
-      value: item.count/total_alleles
+      value: item.count/totalAllelesByRegion[item.region]
     })).reduce((acc, item) => {
       const key = item.region;
       (acc[key] ??= []).push(item);
