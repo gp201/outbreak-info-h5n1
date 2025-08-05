@@ -19,7 +19,7 @@
         <div class="card shadow-sm h-100 border-light bg-transparent">
           <div class="card-header border-light">
             <h4 class="card-title text-end fw-bold text-right mb-0">
-              {{ gene }}
+              Segment: {{ gene }}
             </h4>
           </div>
 

@@ -20,7 +20,7 @@
             <div class="card-header border-light">
               <h4 class="card-title text-end fw-bold text-right mb-0">
                 {{ gene }}
-                <small class="text-muted">{{ gene in gffFeatureToRegion ? "Region: " + gffFeatureToRegion[gene] : "" }}</small>
+                <small class="text-muted">{{ gene in gffFeatureToRegion ? "Segment: " + gffFeatureToRegion[gene] : "" }}</small>
               </h4>
             </div>
 

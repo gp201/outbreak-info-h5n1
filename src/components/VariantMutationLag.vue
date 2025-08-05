@@ -14,7 +14,7 @@
             <div class="card-header border-light">
               <h4 class="card-title text-end fw-bold text-right mb-0">
                 {{ region_or_gff_feature }}
-                <small class="text-muted">{{ region_or_gff_feature in gffFeatureToRegion ? "Region: " + gffFeatureToRegion[region_or_gff_feature] : "" }}</small>
+                <small class="text-muted">{{ region_or_gff_feature in gffFeatureToRegion ? "Segment: " + gffFeatureToRegion[region_or_gff_feature] : "" }}</small>
               </h4>
             </div>
 
