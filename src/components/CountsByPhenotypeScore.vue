@@ -42,6 +42,7 @@
           :minXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'minXLabel') : null"
           :maxXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'maxXLabel') : null"
           :xLabel="!getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'xLabel') : null"
+          :xDomain="phenotypeMetricMinAndMax"
       />
     </div>
 
@@ -96,7 +97,11 @@
 <script setup>
 import { ref, onMounted, watch, useId, computed } from 'vue';
 import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, LoadingSpinner, InfoComponent, CheckBox } from 'outbreakInfo';
-import { getSampleCountByField, getCountByPhenotypeScore } from '../services/munninService.js';
+import {
+  getSampleCountByField,
+  getCountByPhenotypeScore,
+  getPhenotypeMetricMinAndMax
+} from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
 import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
 import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePhenotypeMetricsBySampleAndCollectionDate.vue";
@@ -116,6 +121,7 @@ const isLoadingChart = ref(false);
 const error = ref(null);
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
+const phenotypeMetricMinAndMax = ref([null, null]);
 
 
 function getAxesAttributes(phenotypeScore, attribute) {
@@ -175,6 +181,7 @@ async function loadData() {
   try {
     // TODO: Get HA protein ID from API
     chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
+    phenotypeMetricMinAndMax.value = await getPhenotypeMetricMinAndMax(selectedPhenotypeScore.value);
   } catch (err) {
     console.error('Error loading DMS data:', err);
     error.value = 'Failed to load data. Please try again later.';
