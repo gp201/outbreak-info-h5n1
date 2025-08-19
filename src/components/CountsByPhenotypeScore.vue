@@ -28,7 +28,7 @@
         <LoadingSpinner />
       </div>
       <div v-else-if="error" class="error">{{ error }}</div>
-      <scatter-chart
+      <scatterChart
           v-else
           :data="chartData"
           xKey="phenotypeScore"
@@ -37,7 +37,8 @@
           :titleKey="'key'"
           :yLabel="'Number of samples'"
           :logScale="useLogScale"
-          :tipFormatString="'Mutation: {key}\nCount: {y}\nDMS: {x}'"
+          :additionalAnnotationKeys="['h3Site']"
+          :tipFormatString="'Mutation: {key}\nH3 site number: {additional0}\nCount: {y}\nDMS: {x}'"
           :showMinMaxXLabels="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels')"
           :minXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'minXLabel') : null"
           :maxXLabel="getAxesAttributes(selectedPhenotypeScore, 'showMinMaxXLabels') ? getAxesAttributes(selectedPhenotypeScore, 'maxXLabel') : null"
@@ -108,6 +109,7 @@ import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePheno
 import PhenotypicMetricNamesMultiSelect from "./PhenotypicMetricNamesMultiSelect.vue";
 import helpText from '../helpInfo/helpInfoText.json';
 import { phenotypeMetricAxesLabels, defaultValues } from '../constants/labels.js'
+import {convertSiteHANumbering} from "@/utils/utils.js";
 
 const selectedPhenotypeScoreObject = ref(defaultValues.phenotypeScore);
 const selectedPhenotypeScore = computed(() => {
@@ -155,7 +157,11 @@ async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, ph
   } else if(isolationSource !== null){
     q = `isolation_source=${isolationSource}`;
   }
-  return getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
+  const res = await getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
+  return res.map(item => ({
+    h3Site: convertSiteHANumbering(item.position_aa, "sequential_site", "reference_site"),
+    ...item
+  }))
 }
 
 async function loadHostAndIsolationSourceData(){

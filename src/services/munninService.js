@@ -113,7 +113,8 @@ export async function getCountByPhenotypeScore(region, metric, q = null, field =
     return data.map(item => ({
       key: item.ref_aa + item.position_aa + item.alt_aa,
       phenotypeScore: item.pheno_value,
-      count: item.count
+      count: item.count,
+      ...item
     }));
   } catch (error) {
     console.error(`Error fetching ${field} count by score`, error);
