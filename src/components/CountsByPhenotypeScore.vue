@@ -53,8 +53,9 @@
           fieldName="Host"
           :selectedItem="selectedHost"
           @item-selected="hostBarSelected"
-          :width="330"
+          :width="270"
           :height="310"
+          :xTickFrequency="6"
           :marginLeft="60"/>
     </div>
 
@@ -64,7 +65,8 @@
           fieldName="Isolation Source"
           :selectedItem="selectedIsolationSource"
           @item-selected="isolationSourceBarSelected"
-          :width="300"
+          :width="270"
+          :xTickFrequency="6"
           :height="310" />
     </div>
 
