@@ -88,13 +88,6 @@
                                                           :dataField="props.dataField" />
     </div>
   </div>
-  <div class="row mb-5">
-    <div class="col col-md-12">
-      <AnnotationsByCollectionDate :dataField="props.dataField"
-                                   :selectedHost="selectedHost"
-                                   :selectedIsolationSource="selectedIsolationSource" />
-    </div>
-  </div>
 </template>
 
 <script setup>
@@ -103,10 +96,9 @@ import { ScatterChart, outbreakInfoColorPalette, SelectBarChartWithBarGraph, Loa
 import {
   getSampleCountByField,
   getCountByPhenotypeScore,
-  getPhenotypeMetricMinAndMax
+  getPhenotypeMetricMinAndMax, buildStringQuery
 } from '../services/munninService.js';
 import PhenotypeMetricsByCollectionDate from './PhenotypeMetricsByCollectionDate.vue';
-import AnnotationsByCollectionDate from "./AnnotationsByCollectionDate.vue";
 import AggregatePhenotypeMetricsBySampleAndCollectionDate from "./AggregatePhenotypeMetricsBySampleAndCollectionDate.vue";
 import PhenotypicMetricNamesMultiSelect from "./PhenotypicMetricNamesMultiSelect.vue";
 import helpText from '../helpInfo/helpInfoText.json';
@@ -151,14 +143,10 @@ const isolationSourceBarSelected = (item) => {
 }
 
 async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, phenotypeScore, host, isolationSource, dataField) {
-  let q = null;
-  if(host !== null && isolationSource !== null){
-    q = `host=${host} ^ isolation_source=${isolationSource}`;
-  } else if (host !== null) {
-    q = `host=${host}`;
-  } else if(isolationSource !== null){
-    q = `isolation_source=${isolationSource}`;
-  }
+  const q = buildStringQuery([
+    { field: "host", value: host},
+    { field: "isolation_source", isolationSource }
+  ]);
   const res = await getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
   return res.map(item => ({
     h3Site: convertSiteHANumbering(item.position_aa, "sequential_site", "reference_site"),

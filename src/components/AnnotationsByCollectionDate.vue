@@ -21,6 +21,10 @@
       <span v-if="props.selectedIsolationSource.key">
         <b>Filter by isolation source</b>: {{props.selectedIsolationSource.key}}
       </span>
+      <br>
+      <span v-if="props.selectedLineage.key">
+        <b>Filter by lineage</b>: {{props.selectedLineage.key}}
+      </span>
     </div>
   </div>
 
@@ -75,7 +79,12 @@
 <script setup>
 import {ref, onMounted, watch, computed} from 'vue';
 import { MultiSelectComponent, InfoComponent, TimeSeriesBarChart, LoadingSpinner, outbreakInfoColorPalette } from 'outbreakInfo';
-import { getAnnotationsByVariantsAndCollectionDate, getAnnotationsByMutationsAndCollectionDate, getAllAnnotationEffects } from '../services/munninService.js';
+import {
+  getAnnotationsByVariantsAndCollectionDate,
+  getAnnotationsByMutationsAndCollectionDate,
+  getAllAnnotationEffects,
+  buildStringQuery
+} from '../services/munninService.js';
 import helpText from "../helpInfo/helpInfoText.json";
 import { defaultValues } from "../constants/labels.js";
 
@@ -95,7 +104,8 @@ const selectedEffectDetail = computed(() => {
 const props = defineProps({
   dataField: { type: String, default: "variants" },
   selectedHost: { type: Object, default: null },
-  selectedIsolationSource: { type: Object, default: null }
+  selectedIsolationSource: { type: Object, default: null },
+  selectedLineage: { type: Object, default: null }
 })
 
 async function loadData() {
@@ -111,14 +121,11 @@ async function renderChart() {
   error.value = null;
   let resp;
   try {
-    let q = "";
-    if (props.selectedHost.key !== null && props.selectedIsolationSource.key != null) {
-      q = `host=${props.selectedHost.key} ^ isolation_source=${props.selectedIsolationSource.key}`
-    } else if(props.selectedHost.key !== null) {
-      q = `host=${props.selectedHost.key}`
-    } else if(props.selectedIsolationSource.key != null) {
-      q = `isolation_source=${props.selectedIsolationSource.key}`
-    }
+    const q =  buildStringQuery([
+      { field: "host", value: props.selectedHost.key },
+      { field: "isolation_source", value: props.selectedIsolationSource.key },
+      { field: "lineage_name", value: props.selectedLineage.key },
+    ]);
     if(props.dataField === "variants") {
       resp = await getAnnotationsByVariantsAndCollectionDate(selectedEffectDetail.value, q);
     } else if(props.dataField === "mutations") {
@@ -126,11 +133,11 @@ async function renderChart() {
     }
     chartData.value = resp.flatMap(({ date, proportion }) => [
       { key: date, value: proportion ,       group: selectedEffectDetail.value},
-      { key: date, value: 1 - proportion,   group:  "Other"}
+      { key: date, value: 1 - proportion,   group:  "Not annotated with " + selectedEffectDetail.value}
     ]);
     chartDataCounts.value = resp.flatMap(({ date, n, n_total }) => [
       { key: date, value: n ,       group: selectedEffectDetail.value},
-      { key: date, value: n_total - n,   group:  "Other"}
+      { key: date, value: n_total - n,   group:  "Not annotated with " + selectedEffectDetail.value}
     ])
   } catch (err) {
     console.error('Error searching site:', err);
@@ -152,6 +159,10 @@ watch(() => props.selectedHost, () => {
 }, { deep: true });
 
 watch(() => props.selectedIsolationSource, () => {
+  renderChart();
+}, { deep: true });
+
+watch(() => props.selectedLineage, () => {
   renderChart();
 }, { deep: true });
 

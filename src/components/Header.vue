@@ -49,6 +49,17 @@
             </router-link>
           </li>
           <li class="px-3 nav-item">
+            <router-link
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                class="nav-link"
+                :class="{ active: $route.path === '/literature-surveillance' }"
+                to="/literature-surveillance"
+            >
+              Literature-based Surveillance
+            </router-link>
+          </li>
+          <li class="px-3 nav-item">
             <router-link 
               data-toggle="collapse"
               data-target=".navbar-collapse"

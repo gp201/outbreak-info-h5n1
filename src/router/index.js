@@ -4,6 +4,7 @@ import MutationSurveillanceView from "../views/MutationSurveillanceView.vue";
 import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
 import LineageComparisonView from "../views/LineageComparisonView.vue";
 import VariantMutationSurveillanceView from "../views/VariantMutationSurveillanceView.vue";
+import LiteratureAnnotationsView from "@/views/LiteratureAnnotationsView.vue";
 
 const routes = [
     {
@@ -19,6 +20,11 @@ const routes = [
         path: '/lineage-surveillance',
         name: 'Lineage surveillance',
         component: LineageSurveillanceView
+    },
+    {
+        path: '/literature-surveillance',
+        name: 'Literature-based surveillance',
+        component: LiteratureAnnotationsView
     },
     {
         path: '/lineage-comparison',
