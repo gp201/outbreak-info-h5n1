@@ -4,12 +4,12 @@
     <div class="row">
       <div class="col-md-12">
         <TabsWrapper :tabs="countsByPhenotypeTabs" size="large">
-          <template #hostLevel>
-            <CountsByPhenotypeScore dataField="variants" title="Host-level" />
-          </template>
-
           <template #populationLevel>
             <CountsByPhenotypeScore dataField="mutations" title="Population-level" />
+          </template>
+
+          <template #hostLevel>
+            <CountsByPhenotypeScore dataField="variants" title="Host-level" />
           </template>
         </TabsWrapper>
       </div>
@@ -22,8 +22,8 @@ import CountsByPhenotypeScore from "../components/CountsByPhenotypeScore.vue";
 import { TabsWrapper, HelpTooltip } from 'outbreakInfo';
 
 const countsByPhenotypeTabs = [
-  { name: 'Host-level', key: 'hostLevel' },
-  { name: 'Population-level', key: 'populationLevel' }
+  { name: 'Population-level', key: 'populationLevel' },
+  { name: 'Host-level', key: 'hostLevel' }
 ]
 
 // const countsByPhenotypeTabs = [
