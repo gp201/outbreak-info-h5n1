@@ -57,6 +57,7 @@
 import {computed, onMounted, ref, watch} from 'vue';
 import { TimeSeriesBarChart, TextInput, LoadingSpinner, InfoComponent, outbreakInfoColorPalette } from 'outbreakInfo';
 import {
+  buildStringQuery,
   getPhenotypeMetricCountsForMutationsByCollectionDate,
   getPhenotypeMetricCountsForVariantsByCollectionDate, getPhenotypeMetricValueByMutationsQuantile,
   getPhenotypeMetricValueByVariantsQuantile
@@ -107,14 +108,10 @@ async function loadData() {
 
   if (isLoading.value) return;
   if (props.selectedPhenotypeScore !== "" && props.selectedPhenotypeScore !== null) {
-    let q = "";
-    if (props.selectedHost.key !== null && props.selectedIsolationSource.key != null) {
-      q = `host=${props.selectedHost.key} ^ isolation_source=${props.selectedIsolationSource.key}`
-    } else if(props.selectedHost.key !== null) {
-      q = `host=${props.selectedHost.key}`
-    } else if(props.selectedIsolationSource.key != null) {
-      q = `isolation_source=${props.selectedIsolationSource.key}`
-    }
+    const q = buildStringQuery([
+      { field: "host", value: props.selectedHost.key },
+      { field: "isolation_source", value: props.selectedIsolationSource.key }
+    ]);
     isLoading.value = true;
     const data = await getPhenotypeMetricCountsForDataFieldByCollectionDate(props.dataField,
         props.selectedPhenotypeScore,

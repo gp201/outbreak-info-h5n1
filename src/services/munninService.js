@@ -105,7 +105,7 @@ export async function getVariantFrequency(aa, nt = '') {
 export async function getCountByPhenotypeScore(region, metric, q = null, field = "variants")  {
   try {
     let url = `${field}/frequency/score?region=${region}&metric=${metric}`;
-    if(q !== null) {
+    if(q !== null && q !== "") {
       url += `&q=${q}`;
     }
     const data = await makeRequest(url);
@@ -148,7 +148,7 @@ export async function getLineagesByLineageSystem(lineage_system_name)  {
 export async function getLineageCountBySample(q = null)  {
   try {
     let url = `count/samples/lineages`;
-    if (q !== null)
+    if (q !== null && q !== "")
       url += `?q=${q}`;
     const data = await makeRequest(url);
 
@@ -167,7 +167,7 @@ export async function getLineageCountBySample(q = null)  {
 export async function getLineageSummaryStatsBySample(q = null)  {
   try {
     let url = `lineages/abundances/summary_stats`;
-    if (q !== null)
+    if (q !== null && q !== "")
       url += `?q=${q}`;
     return await makeRequest(url);
   } catch (error) {
@@ -389,7 +389,7 @@ export async function getRegionToGffFeatureMappingForVariants() {
 export async function getLineageMutationProfile(lineage, lineage_system_name, q = null) {
   try {
     let url = `v0/lineages:mutationProfile?lineage=${encodeURIComponent(lineage)}&lineage_system_name=${lineage_system_name}`;
-    if (q !== null)
+    if (q !== null && q !== "")
       url += `?q=${q}`;
     const data = await makeRequest(url);
     const totalAllelesByRegion = data.reduce((acc, { region, count }) => {
@@ -600,4 +600,16 @@ export async function getAggregatePhenotypeMetricValuesForVariantsBySampleAndCol
       q,
       date_bin,
       max_span_days);
+}
+
+export function buildStringQuery(fields, sep = " ^ ") {
+  const parts = [];
+
+  for (const { field, value } of fields) {
+    if (value !== null && value !== undefined && value !== "") {
+      parts.push(`${field}=${value}`);
+    }
+  }
+
+  return parts.join(sep);
 }

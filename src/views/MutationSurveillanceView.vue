@@ -19,23 +19,12 @@
 
 <script setup>
 import CountsByPhenotypeScore from "../components/CountsByPhenotypeScore.vue";
-import { TabsWrapper, HelpTooltip } from 'outbreakInfo';
+import { TabsWrapper } from 'outbreakInfo';
 
 const countsByPhenotypeTabs = [
   { name: 'Population-level', key: 'populationLevel' },
   { name: 'Host-level', key: 'hostLevel' }
 ]
-
-// const countsByPhenotypeTabs = [
-//   {
-//     name: 'Host-level',
-//     content: '<CountsByPhenotypeScore dataField="variants" title="Host-level" />'
-//   },
-//   {
-//     name: 'Population-level',
-//     content: '<CountsByPhenotypeScore dataField="mutations" title="Population-level" />'
-//   }
-// ]
 
 </script>
 

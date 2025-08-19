@@ -34,7 +34,7 @@ import {computed, onMounted, ref, watch} from 'vue';
 import { TimeSeriesPointRangeChart, LoadingSpinner, InfoComponent, outbreakInfoColorPalette } from 'outbreakInfo';
 import {
   getAggregatePhenotypeMetricValuesForVariantsBySampleAndCollectionDate,
-  getAggregatePhenotypeMetricValuesForMutationsBySampleAndCollectionDate,
+  getAggregatePhenotypeMetricValuesForMutationsBySampleAndCollectionDate, buildStringQuery,
 } from "../services/munninService.js";
 import helpText from "../helpInfo/helpInfoText.json";
 import {phenotypeMetricLabels} from "../constants/labels.js";
@@ -65,14 +65,10 @@ async function loadData() {
 
   chartData.value = [];
   if (props.selectedPhenotypeScore !== "" && props.selectedPhenotypeScore !== null) {
-    let q = "";
-    if (props.selectedHost.key !== null && props.selectedIsolationSource.key != null) {
-      q = `host=${props.selectedHost.key} ^ isolation_source=${props.selectedIsolationSource.key}`
-    } else if(props.selectedHost.key !== null) {
-      q = `host=${props.selectedHost.key}`
-    } else if(props.selectedIsolationSource.key != null) {
-      q = `isolation_source=${props.selectedIsolationSource.key}`
-    }
+    const q = buildStringQuery([
+      { field: "host", value: props.selectedHost.key },
+      { field: "isolation_source", value: props.selectedIsolationSource.key }
+    ]);
     isLoading.value = true;
     chartData.value = await getAggregatePhenotypeMetricValuesForDataFieldBySampleAndCollectionDate(props.dataField,
         props.selectedPhenotypeScore,
