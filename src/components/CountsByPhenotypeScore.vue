@@ -145,7 +145,7 @@ const isolationSourceBarSelected = (item) => {
 async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, phenotypeScore, host, isolationSource, dataField) {
   const q = buildStringQuery([
     { field: "host", value: host},
-    { field: "isolation_source", isolationSource }
+    { field: "isolation_source", value: isolationSource }
   ]);
   const res = await getCountByPhenotypeScore(region, phenotypeScore, q, dataField);
   return res.map(item => ({
