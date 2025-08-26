@@ -9,7 +9,7 @@
   <div v-else-if="Object.keys(chartData).length > 0">
     <div class="container-fluid">
       <div class="row">
-        <div v-for="(data, region_or_gff_feature) in chartData" :key="region_or_gff_feature" class="chart-section col-xl-6 col-lg-6 col-md-12 mb-6 chart-section">
+        <div v-for="(data, region_or_gff_feature) in chartData" :key="region_or_gff_feature" class="col-xl-6 col-lg-6 col-md-6 mb-6">
           <div class="card shadow-sm h-100 border-light bg-transparent">
             <div class="card-header border-light">
               <h4 class="card-title text-end fw-bold text-right mb-0">
