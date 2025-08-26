@@ -113,6 +113,7 @@ import helpText from "../helpInfo/helpInfoText.json";
 const transformedData = ref({});
 const transformedStats = ref({});
 const isLoadingChart = ref(false);
+const isLoadingSelectData = ref(false);
 const error = ref(null);
 const hostData = ref([]);
 const selectedHost = ref({key: null, value: null});
@@ -162,12 +163,11 @@ function transformSummaryStatsData(data) {
 }
 
 async function getLineageData(){
-  let rawData = await getLineageStatsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key);
-  rawData = transformData(rawData);
-  let rawStatsData = await getLineageStatsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key, true);
-  rawStatsData = transformSummaryStatsData(rawStatsData);
-
-  return [rawData, rawStatsData];
+  const [rawData, rawStatsData] = await Promise.all([
+    getLineageStatsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key),
+    getLineageStatsFilterByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key, true)
+  ]);
+  return [transformData(rawData), transformSummaryStatsData(rawStatsData)];
 }
 
 async function getLineageStatsFilterByHostAndIsolationSource(host, isolationSource, summaryStats = false) {
@@ -188,15 +188,30 @@ async function getLineageCountByDateBinByHostAndIsolationSource(host, isolationS
   return getLineageCountByDateBin(q);
 }
 
+async function loadHostAndIsolationSourceData(){
+  isLoadingSelectData.value = true;
+  try {
+    [hostData.value, isolationSourceData.value] = await Promise.all([
+      getSampleCountByField("host"),
+      getSampleCountByField("isolation_source")
+    ]);
+  } catch (err) {
+    console.error('Error loading host and isolation source data', err);
+  } finally {
+    isLoadingSelectData.value = false;
+  }
+}
+
 async function loadData() {
   isLoadingChart.value = true;
   error.value = null;
 
   try {
-    hostData.value = await getSampleCountByField("host");
-    isolationSourceData.value = await getSampleCountByField("isolation_source");
-    const [data, stats] = await getLineageData();
-    lineageCountsByDateBinResults.value = await getLineageCountByDateBinByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key);
+    let data, stats;
+    [[data, stats], lineageCountsByDateBinResults.value] = await Promise.all([
+        getLineageData(),
+        getLineageCountByDateBinByHostAndIsolationSource(selectedHost.value.key, selectedIsolationSource.value.key)
+    ])
     transformedData.value = data;
     transformedStats.value = stats;
 
@@ -211,7 +226,10 @@ async function loadData() {
   }
 }
 
-onMounted(loadData);
+onMounted(() => {
+  loadHostAndIsolationSourceData();
+  loadData();
+});
 watch(() => selectedHost.value, loadData);
 watch(() => selectedIsolationSource.value, loadData);
 </script>

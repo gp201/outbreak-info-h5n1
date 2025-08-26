@@ -113,6 +113,7 @@ const selectedPhenotypeScore = computed(() => {
 })
 const useLogScale = ref(true);
 const chartData = ref([]);
+const isLoadingSelectData = ref(false);
 const isLoadingChart = ref(false);
 const error = ref(null);
 const hostData = ref([]);
@@ -155,14 +156,16 @@ async function getCountByPhenotypeScoreFilterByHostAndIsolationSource(region, ph
 }
 
 async function loadHostAndIsolationSourceData(){
-  isLoadingChart.value = true;
+  isLoadingSelectData.value = true;
   try {
-    hostData.value = await getSampleCountByField("host");
-    isolationSourceData.value = await getSampleCountByField("isolation_source");
+    [hostData.value, isolationSourceData.value] = await Promise.all([
+        getSampleCountByField("host"),
+        getSampleCountByField("isolation_source")
+    ]);
   } catch (err) {
     console.error('Error loading host and isolation source data', err);
   } finally {
-    isLoadingChart.value = false;
+    isLoadingSelectData.value = false;
   }
 }
 
@@ -176,8 +179,10 @@ async function loadData() {
 
   try {
     // TODO: Get HA protein ID from API
-    chartData.value = await getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField);
-    phenotypeMetricMinAndMax.value = await getPhenotypeMetricMinAndMax(selectedPhenotypeScore.value);
+    [chartData.value, phenotypeMetricMinAndMax.value] = await Promise.all([
+      getCountByPhenotypeScoreFilterByHostAndIsolationSource("XAJ25415.1", selectedPhenotypeScore.value, selectedHost.value.key, selectedIsolationSource.value.key, props.dataField),
+      getPhenotypeMetricMinAndMax(selectedPhenotypeScore.value)
+    ]);
   } catch (err) {
     console.error('Error loading DMS data:', err);
     error.value = 'Failed to load data. Please try again later.';

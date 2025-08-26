@@ -189,9 +189,11 @@ async function getLineageCountsAndReformat() {
 async function loadHostAndIsolationSourceData(){
   isLoadingChart.value = true;
   try {
-    hostData.value = await getSampleCountByField("host");
-    isolationSourceData.value = await getSampleCountByField("isolation_source");
-    lineageCountData.value = await getLineageCountsAndReformat();
+    [hostData.value, isolationSourceData.value, lineageCountData.value] = await Promise.all([
+      getSampleCountByField("host"),
+      getSampleCountByField("isolation_source"),
+      getLineageCountsAndReformat()
+    ]);
   } catch (err) {
     console.error('Error loading host and isolation source data', err);
   } finally {
