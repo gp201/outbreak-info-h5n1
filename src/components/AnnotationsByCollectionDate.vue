@@ -1,25 +1,67 @@
 <template>
   <h5>Literature annotations over time</h5>
   <InfoComponent :embedded="true" class="mb-3">
-    <span v-html="helpText.mutationSurveillance.literatureAnnotationsOverTime"></span>
+    <span v-html="helpText.literatureSurveillance.literatureAnnotationsOverTime"></span>
   </InfoComponent>
   <MultiSelectComponent
       class="mb-1"
       :multiple="false"
       :options="allAnnotationEffects"
-      label="Select an annotation effect. You can filter by host and isolation source using the filters above."
+      label="Select an annotation effect. You can filter by host, isolation source, and lineage by expanding the filters below."
       placeholder="Select annotation effect"
       :showButton="false"
       v-model="selectedEffectDetailObject"
   />
 
+  <CollapseWrapper :items="filterItems" :v-model="expandedFilterItems">
+    <template #filters>
+      <div class="row">
+        <div class="col col-md-4">
+          <SelectBarChartWithBarGraph
+              :data="hostData"
+              fieldName="Host"
+              :selectedItem="selectedHost"
+              @item-selected="hostBarSelected"
+              :width="300"
+              :height="310"
+              :xTickFrequency="6"
+              :marginLeft="60"/>
+        </div>
+
+        <div class="col col-md-4">
+          <SelectBarChartWithBarGraph
+              :data="isolationSourceData"
+              fieldName="Isolation Source"
+              :selectedItem="selectedIsolationSource"
+              @item-selected="isolationSourceBarSelected"
+              :width="300"
+              :xTickFrequency="6"
+              :height="310" />
+        </div>
+
+        <div class="col col-md-4">
+          <SelectBarChartWithBarGraph
+              :data="lineageCountData"
+              fieldName="Lineage"
+              :selectedItem="selectedLineage"
+              @item-selected="lineageBarSelected"
+              :width="300"
+              :xTickFrequency="6"
+              :height="310" />
+        </div>
+      </div>
+    </template>
+  </CollapseWrapper>
+
   <div class="row">
     <div class="col">
-      <TagComponent class="d-inline m-1" v-if="props.selectedHost.key" type="error" :text="'Filter by host: ' + props.selectedHost.key" />
-      <TagComponent class="d-inline m-1" v-if="props.selectedIsolationSource.key" type="error" :text="'Filter by isolation source: ' + props.selectedIsolationSource.key" />
-      <TagComponent class="d-inline m-1" v-if="props.selectedLineage.key" type="error" :text="'Filter by lineage: ' + props.selectedLineage.key" />
+      <TagComponent class="d-inline m-1" v-if="selectedHost.key" type="error" :text="'Filter by host: ' + selectedHost.key" />
+      <TagComponent class="d-inline m-1" v-if="selectedIsolationSource.key" type="error" :text="'Filter by isolation source: ' + selectedIsolationSource.key" />
+      <TagComponent class="d-inline m-1" v-if="selectedLineage.key" type="error" :text="'Filter by lineage: ' + selectedLineage.key" />
     </div>
   </div>
+
+  <hr>
 
   <div v-if="isLoading" class="loading">
     <LoadingSpinner />
@@ -67,19 +109,31 @@
       />
     </div>
   </div>
+  <div class="row">
+    <div class="col col-md-12">
+      <AnnotationsByAminoAcidPosition
+          :dataField="props.dataField"
+          :selectedHost="selectedHost"
+          :selectedIsolationSource="selectedIsolationSource"
+          :selectedLineage="selectedLineage"
+          :selectedEffectDetail="selectedEffectDetail"
+      />
+    </div>
+  </div>
 </template>
 
 <script setup>
 import {ref, onMounted, watch, computed} from 'vue';
-import { MultiSelectComponent, InfoComponent, TimeSeriesBarChart, LoadingSpinner, outbreakInfoColorPalette, TagComponent } from 'outbreakInfo';
+import { SelectBarChartWithBarGraph, MultiSelectComponent, InfoComponent, TimeSeriesBarChart, LoadingSpinner, outbreakInfoColorPalette, TagComponent, CollapseWrapper } from 'outbreakInfo';
 import {
   getAnnotationsByVariantsAndCollectionDate,
   getAnnotationsByMutationsAndCollectionDate,
   getAllAnnotationEffects,
-  buildStringQuery
+  buildStringQuery, getLineageCountBySample, getSampleCountByField
 } from '../services/munninService.js';
 import helpText from "../helpInfo/helpInfoText.json";
 import { defaultValues } from "../constants/labels.js";
+import AnnotationsByAminoAcidPosition from "./AnnotationsByAminoAcidPosition.vue";
 
 const chartData = ref([]);
 const chartDataCounts = ref([]);
@@ -87,6 +141,11 @@ const allAnnotationEffects = ref([]);
 const isLoading = ref(false);
 const error = ref(null);
 const selectedEffectDetailObject = ref(defaultValues.effectDetail);
+
+const filterItems = [
+  { title: 'Filters', key: 'filters' },
+];
+const expandedFilterItems = ref(['0']);
 
 const selectedEffectDetail = computed(() => {
   if(selectedEffectDetailObject.value === null)
@@ -96,10 +155,49 @@ const selectedEffectDetail = computed(() => {
 
 const props = defineProps({
   dataField: { type: String, default: "variants" },
-  selectedHost: { type: Object, default: null },
-  selectedIsolationSource: { type: Object, default: null },
-  selectedLineage: { type: Object, default: null }
 })
+
+const hostData = ref([]);
+const isolationSourceData = ref([]);
+const isLoadingChart = ref(false);
+const lineageCountData = ref([]);
+const selectedHost = ref({key: null, value: null});
+const selectedIsolationSource = ref({key: null, value: null});
+const selectedLineage = ref({key: null, value: null});
+
+// TODO: Bind this using v-model. Requires modifying SelectBarChartWithBarGraph
+const hostBarSelected = (item) => {
+  selectedHost.value = item;
+};
+
+const isolationSourceBarSelected = (item) => {
+  selectedIsolationSource.value = item;
+}
+
+const lineageBarSelected = (item) => {
+  selectedLineage.value = item;
+}
+
+async function getLineageCountsAndReformat() {
+  let res = await getLineageCountBySample();
+  return res.filter(item => item.lineage_system === "usda_genoflu").map(item => ({
+    key: item.lineage,
+    value: item.count
+  }))
+}
+
+async function loadHostAndIsolationSourceData(){
+  isLoadingChart.value = true;
+  try {
+    hostData.value = await getSampleCountByField("host");
+    isolationSourceData.value = await getSampleCountByField("isolation_source");
+    lineageCountData.value = await getLineageCountsAndReformat();
+  } catch (err) {
+    console.error('Error loading host and isolation source data', err);
+  } finally {
+    isLoadingChart.value = false;
+  }
+}
 
 async function loadData() {
   let resp = await getAllAnnotationEffects();
@@ -115,9 +213,9 @@ async function renderChart() {
   let resp;
   try {
     const q =  buildStringQuery([
-      { field: "host", value: props.selectedHost.key },
-      { field: "isolation_source", value: props.selectedIsolationSource.key },
-      { field: "lineage_name", value: props.selectedLineage.key },
+      { field: "host", value: selectedHost.key },
+      { field: "isolation_source", value: selectedIsolationSource.key },
+      { field: "lineage_name", value: selectedLineage.key },
     ]);
     if(props.dataField === "variants") {
       resp = await getAnnotationsByVariantsAndCollectionDate(selectedEffectDetail.value, q);
@@ -144,18 +242,19 @@ async function renderChart() {
 
 onMounted(() => {
   loadData();
+  loadHostAndIsolationSourceData();
   renderChart();
 });
 
-watch(() => props.selectedHost, () => {
+watch(() => selectedHost, () => {
   renderChart();
 }, { deep: true });
 
-watch(() => props.selectedIsolationSource, () => {
+watch(() => selectedIsolationSource, () => {
   renderChart();
 }, { deep: true });
 
-watch(() => props.selectedLineage, () => {
+watch(() => selectedLineage, () => {
   renderChart();
 }, { deep: true });
 
