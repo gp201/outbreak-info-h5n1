@@ -22,7 +22,7 @@
     </div>
     <div v-else class="container-fluid">
       <div class="row">
-        <div v-for="(data, gene) in chartData" :key="gene" class="col-xl-6 col-lg-6 col-md-12 mb-6 chart-section">
+        <div v-for="(data, gene) in chartData" :key="gene" class="col-xl-6 col-lg-6 col-md-6 mb-6">
           <div class="card shadow-sm h-100 border-light bg-transparent">
             <div class="card-header border-light">
               <h4 class="card-title text-end fw-bold text-right mb-0">
