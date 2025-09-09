@@ -1,13 +1,13 @@
 <template>
-  <LineageMultiSelect :multiple="false" :showButton="false" v-model="selectedLineageObject" />
-  <div v-if="isLoading" class="loading">
-    <LoadingSpinner />
-  </div>
-  <div v-else-if="error">
-    {{ error.value }}
-  </div>
-  <div v-else-if="Object.keys(chartData).length > 0">
-    <div class="container-fluid">
+  <div class="container-fluid">
+    <LineageMultiSelect :multiple="false" :showButton="false" v-model="selectedLineageObject" />
+    <div v-if="isLoading" class="loading">
+      <LoadingSpinner />
+    </div>
+    <div v-else-if="error">
+      {{ error.value }}
+    </div>
+    <div v-else-if="Object.keys(chartData).length > 0">
       <div class="row">
         <div v-for="(data, region_or_gff_feature) in chartData" :key="region_or_gff_feature" class="col-xl-6 col-lg-6 col-md-6 mb-6">
           <div class="card shadow-sm h-100 border-light bg-transparent">
@@ -38,6 +38,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup>

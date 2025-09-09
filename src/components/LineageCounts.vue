@@ -33,9 +33,9 @@
           :selectedItem="selectedHost"
           @item-selected="hostBarSelected"
           :width="270"
-          :height="310"
+          :height="270"
           :xTickFrequency="6"
-          :marginLeft="60" />
+          :marginLeft="100" />
     </div>
 
     <div class="col col-md-3">
@@ -46,7 +46,8 @@
           @item-selected="isolationSourceBarSelected"
           :xTickFrequency="6"
           :width="270"
-          :height="310" />
+          :height="270"
+          :marginLeft="100" />
     </div>
   </div>
   <div class="row">

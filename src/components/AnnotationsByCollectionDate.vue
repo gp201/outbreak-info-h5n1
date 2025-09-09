@@ -25,7 +25,7 @@
               :width="300"
               :height="310"
               :xTickFrequency="6"
-              :marginLeft="60"/>
+              :marginLeft="100"/>
         </div>
 
         <div class="col col-md-4">
@@ -36,7 +36,8 @@
               @item-selected="isolationSourceBarSelected"
               :width="300"
               :xTickFrequency="6"
-              :height="310" />
+              :height="310"
+              :marginLeft="100" />
         </div>
 
         <div class="col col-md-4">

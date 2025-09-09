@@ -1,26 +1,30 @@
 <template>
   <div class="row">
-    <div class="col col-md-6">
+    <div class="col col-md-4">
       <LineageMultiSelect :multiple="false" :showButton="false" v-model="selectedLineageObject" />
     </div>
-    <div class="col col-md-6">
+    <div class="col col-md-4">
       <GffFeatureMultiSelect v-model="selectedGffFeatureObject" :serviceFunction="props.serviceFunction"/>
     </div>
-    <div class="col col-md-4 mb-4">
+  </div>
+  <div class="row">
+    <div class="col col-md-2 mt-3">
       <TextInput
           placeholder="Site"
           v-model="selectedSite"
           :showButton="false"
+          label="Site"
       />
     </div>
-    <div class="col col-md-4 mb-4">
+    <div class="col col-md-2 mt-3">
       <TextInput
           placeholder="Alternate amino acid"
           v-model="selectedAltAA"
           :showButton="false"
+          label="Alternate amino acid"
       />
     </div>
-    <div class="col col-md-4 mb-4">
+    <div class="col col-md-4 mb-4 mt-4">
       <ButtonComponent text="Run" :onClick="selectSite" />
     </div>
   </div>

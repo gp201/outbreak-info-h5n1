@@ -1,58 +1,61 @@
 <template>
 
-  <div class="row">
-    <div class="col col-md-6 mt-3">
-      <SelectLineageAndProteinAndAltAA @selectSite="loadChart" :serviceFunction="getRegionToGffFeatureMappingForMutationsAndVariants" />
-    </div>
-  </div>
-
-
-  <div v-if="isLoading" class="loading-message">
-    <LoadingSpinner />
-  </div>
-
-  <div class="row" v-else>
-    <div class="col col-md-6">
-      <div v-if="variantFrequencyError">
-        {{variantFrequencyError.value}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-md-12 mt-3">
+        <SelectLineageAndProteinAndAltAA @selectSite="loadChart" :serviceFunction="getRegionToGffFeatureMappingForMutationsAndVariants" />
       </div>
-      <TimeSeriesPointRangeChart
-          v-else
-          :data="variantFrequencyOverTime"
-          :isPreBinned="true"
-          binInterval="month"
-          xLabel="Month"
-          groupBy=""
-          q1Attribute="alt_freq_q1"
-          q3Attribute="alt_freq_q3"
-          medianAttribute="alt_freq_median"
-          tickInterval="6 month"
-          :marginBottom="70"
-          :marginLeft="100"
-          :marginTop="50"
-          :xTickMin="xTicksMinMax[0]"
-          :xTickMax="xTicksMinMax[1]"
-          yLabel="Frequency of host-level variants"
-      />
     </div>
-    <div class="col col-md-6">
-      <div v-if="mutationCountError">
-        {{mutationCountError.value}}
+
+
+    <div v-if="isLoading" class="loading-message">
+      <LoadingSpinner />
+    </div>
+
+    <div class="row" v-else>
+      <div class="col col-md-6">
+        <div v-if="variantFrequencyError">
+          {{variantFrequencyError.value}}
+        </div>
+        <TimeSeriesPointRangeChart
+            v-else
+            :data="variantFrequencyOverTime"
+            :isPreBinned="true"
+            binInterval="month"
+            xLabel="Month"
+            groupBy=""
+            q1Attribute="alt_freq_q1"
+            q3Attribute="alt_freq_q3"
+            medianAttribute="alt_freq_median"
+            tickInterval="6 month"
+            :marginBottom="70"
+            :marginLeft="100"
+            :marginTop="50"
+            :xTickMin="xTicksMinMax[0]"
+            :xTickMax="xTicksMinMax[1]"
+            yLabel="Frequency of host-level variants"
+        />
       </div>
-      <TimeSeriesBarChart
-          v-else
-          :data="mutationCountOverTime"
-          :height="500"
-          groupKey="group"
-          binInterval="month"
-          :isPreBinned="true"
-          tickInterval="6 months"
-          :marginBottom="70"
-          :marginLeft="100"
-          xLabel="Month"
-      />
+      <div class="col col-md-6">
+        <div v-if="mutationCountError">
+          {{mutationCountError.value}}
+        </div>
+        <TimeSeriesBarChart
+            v-else
+            :data="mutationCountOverTime"
+            :height="500"
+            groupKey="group"
+            binInterval="month"
+            :isPreBinned="true"
+            tickInterval="6 months"
+            :marginBottom="70"
+            :marginLeft="100"
+            xLabel="Month"
+        />
+      </div>
     </div>
   </div>
+
 </template>
 
 <script setup>
