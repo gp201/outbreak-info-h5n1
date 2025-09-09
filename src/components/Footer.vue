@@ -4,7 +4,16 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="list-inline-item nav-link nav-item">
-            <a target="_blank" href="https://github.com/andersen-lab/avian-influenza/">Data sources</a>
+            <a target="_blank" href="https://github.com/andersen-lab/avian-influenza/">Genomic data sources</a>
+          </li>
+          <li class="list-inline-item nav-link nav-item">
+            <a target="_blank" href="https://evescape.org/">EVE</a>
+          </li>
+          <li class="list-inline-item nav-link nav-item">
+            <a target="_blank" href="https://izsvenezie-virology.github.io/FluMut/">FluMut</a>
+          </li>
+          <li class="list-inline-item nav-link nav-item">
+            <a target="_blank" href="https://github.com/outbreak-info/outbreak-info-h5n1">Report an issue on Github</a>
           </li>
         </ul>
       </div>
