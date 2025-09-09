@@ -3,7 +3,7 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark w-100 bg-grey__lighter nav-hero"
     >
-      <a class="navbar-brand no-underline" href="">
+      <a class="navbar-brand no-underline" href="/">
         <img
           src="@/assets/icon-01.svg"
           width="30"
