@@ -18,12 +18,13 @@
           </h4>
         </div>
 
+        <!-- TODO: Fix if horizontal fix xkey and ykey in js-outbreak -->
         <div class="card-body bg-none p-4 d-flex justify-content-center">
           <BarChart
               :data="data"
               :horizontal="false"
-              xKey="position_aa"
-              yKey="count"
+              xKey="count"
+              yKey="position_aa"
               xLabel="Amino acid position"
               yLabel="Count"
               barColor="Amino acid change"
