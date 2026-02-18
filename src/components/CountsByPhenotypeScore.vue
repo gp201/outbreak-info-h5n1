@@ -191,10 +191,6 @@ async function loadHostAndIsolationSourceData(){
 }
 
 async function loadData() {
-  regionMapping.value = props.dataField === 'mutations'
-    ? await getRegionToGffFeatureMappingForMutations()
-    : await getRegionToGffFeatureMappingForVariants();
-
   chartData.value = [];
   if(selectedPhenotypeScore.value === null){
     return;
@@ -216,7 +212,18 @@ async function loadData() {
   }
 }
 
+async function loadRegionMapping() {
+  try {
+    regionMapping.value = props.dataField === 'mutations'
+      ? await getRegionToGffFeatureMappingForMutations()
+      : await getRegionToGffFeatureMappingForVariants();
+  } catch (err) {
+    console.error('Error loading region mapping:', err);
+  }
+}
+
 onMounted(async () => {
+  await loadRegionMapping();
   loadHostAndIsolationSourceData();
   loadData();
 });
