@@ -1,0 +1,5169 @@
+{
+  "retrieved_at": "2026-11-17T05:57:15Z",
+  "humans": [
+    {
+      "month": "2024-03",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-05",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-06",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-07",
+      "state": "Colorado",
+      "cases": 9,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-08",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-09",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-10",
+      "state": "California",
+      "cases": 19,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-10",
+      "state": "Washington",
+      "cases": 10,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-11",
+      "state": "California",
+      "cases": 12,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-11",
+      "state": "Louisiana",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-11",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-11",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-12",
+      "state": "California",
+      "cases": 6,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-12",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2024-12",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2025-02",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2025-02",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2025-02",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2025-10",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    },
+    {
+      "month": "2026-10",
+      "state": "Washington",
+      "cases": 3,
+      "source": "https://www.cdc.gov/bird-flu/h5-monitoring/index.html"
+    }
+  ],
+  "cattle": [
+    {
+      "month": "2024-03",
+      "state": "Kansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-03",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-03",
+      "state": "Texas",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Kansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Michigan",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "New Mexico",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-04",
+      "state": "Texas",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-05",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-05",
+      "state": "Idaho",
+      "cases": 16,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-05",
+      "state": "Michigan",
+      "cases": 18,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-05",
+      "state": "South Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-05",
+      "state": "Texas",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Colorado",
+      "cases": 22,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Idaho",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Iowa",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Minnesota",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Texas",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-06",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Colorado",
+      "cases": 26,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Minnesota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Oklahoma",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-07",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "California",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "Colorado",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "New Mexico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-08",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-09",
+      "state": "California",
+      "cases": 41,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-09",
+      "state": "Idaho",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-09",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-09",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-10",
+      "state": "California",
+      "cases": 182,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-10",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-10",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-10",
+      "state": "Utah",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-11",
+      "state": "California",
+      "cases": 249,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-11",
+      "state": "Utah",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-12",
+      "state": "California",
+      "cases": 225,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-12",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-12",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2024-12",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-01",
+      "state": "California",
+      "cases": 38,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-01",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-01",
+      "state": "Nevada",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-02",
+      "state": "Arizona",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-02",
+      "state": "California",
+      "cases": 10,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-02",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-02",
+      "state": "Nevada",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-03",
+      "state": "California",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-03",
+      "state": "Idaho",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-03",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-04",
+      "state": "Arizona",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-04",
+      "state": "California",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-04",
+      "state": "Idaho",
+      "cases": 42,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-05",
+      "state": "Arizona",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-05",
+      "state": "Idaho",
+      "cases": 22,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-05",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-06",
+      "state": "Arizona",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-06",
+      "state": "California",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-07",
+      "state": "California",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-08",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-09",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-09",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-10",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-11",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2025-12",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-04",
+      "state": "Idaho",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-05",
+      "state": "Idaho",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-05",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-06",
+      "state": "Idaho",
+      "cases": 40,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-06",
+      "state": "Texas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-06",
+      "state": "Utah",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-07",
+      "state": "Idaho",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-07",
+      "state": "Utah",
+      "cases": 10,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-08",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-09",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-09",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-10",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-10",
+      "state": "Indiana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-10",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-10",
+      "state": "Texas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-10",
+      "state": "Washington",
+      "cases": 40,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-11",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-11",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://hpj.com/2026/11/16/hpai-confirmed-in-oklahoma-dairy-herd/"
+    },
+    {
+      "month": "2026-11",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-11",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    },
+    {
+      "month": "2026-11",
+      "state": "Washington",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/hpai-confirmed-cases-livestock"
+    }
+  ],
+  "poultry": [
+    {
+      "month": "2022-02",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "Indiana",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "Kentucky",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "Maine",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-02",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Connecticut",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Delaware",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Illinois",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Iowa",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Kansas",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Maine",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Maryland",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Minnesota",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Missouri",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Nebraska",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "New Hampshire",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "North Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "South Dakota",
+      "cases": 22,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-03",
+      "state": "Wyoming",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Alaska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Colorado",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Idaho",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Indiana",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Iowa",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Kansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Michigan",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Minnesota",
+      "cases": 59,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Missouri",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Montana",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Nebraska",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "New York",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "North Carolina",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "North Dakota",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Pennsylvania",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "South Dakota",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Wisconsin",
+      "cases": 10,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-04",
+      "state": "Wyoming",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Idaho",
+      "cases": 21,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Illinois",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Minnesota",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Pennsylvania",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "South Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Washington",
+      "cases": 13,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Wisconsin",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-05",
+      "state": "Wyoming",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Indiana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-06",
+      "state": "Washington",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Oregon",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Utah",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-07",
+      "state": "Washington",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Alaska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "California",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Minnesota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-08",
+      "state": "Washington",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "California",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Delaware",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Minnesota",
+      "cases": 16,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "New Hampshire",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "North Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Ohio",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Oregon",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Pennsylvania",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "South Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Utah",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-09",
+      "state": "Wisconsin",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Alaska",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Arkansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "California",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Colorado",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Connecticut",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Florida",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Kansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Kentucky",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Michigan",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Minnesota",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Montana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Nebraska",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "New Jersey",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "New Mexico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Oklahoma",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Pennsylvania",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Rhode Island",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "South Dakota",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Utah",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Virginia",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-10",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Alaska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Arizona",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "California",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Florida",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Minnesota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Mississippi",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Missouri",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "North Carolina",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "North Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Oregon",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Pennsylvania",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "South Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "South Dakota",
+      "cases": 13,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Tennessee",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Wisconsin",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-11",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Alabama",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "California",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Colorado",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Iowa",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Minnesota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Missouri",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Nebraska",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "North Carolina",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Oregon",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "South Dakota",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Tennessee",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2022-12",
+      "state": "Washington",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "California",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Kansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "New Hampshire",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "New York",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Oregon",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Virginia",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-01",
+      "state": "Washington",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "California",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Florida",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Kansas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Maine",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Mississippi",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "New York",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Pennsylvania",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-02",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Mississippi",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Pennsylvania",
+      "cases": 21,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-03",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "New York",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-04",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-05",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-05",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-05",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-05",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-07",
+      "state": "New York",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-08",
+      "state": "New York",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-09",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Alabama",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Alaska",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Iowa",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Minnesota",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Montana",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "North Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Oklahoma",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "South Dakota",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-10",
+      "state": "Washington",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Alabama",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Alaska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "California",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Florida",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Iowa",
+      "cases": 13,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Minnesota",
+      "cases": 20,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Missouri",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Montana",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "New Mexico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "North Dakota",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Oregon",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "South Dakota",
+      "cases": 20,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-11",
+      "state": "Wisconsin",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Alabama",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Arkansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "California",
+      "cases": 18,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Iowa",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Kansas",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Michigan",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Minnesota",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Missouri",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "New York",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Ohio",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "South Dakota",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2023-12",
+      "state": "Wisconsin",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "California",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Kansas",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Maine",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "South Carolina",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-01",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Missouri",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "New York",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "North Carolina",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Ohio",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "Pennsylvania",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-02",
+      "state": "West Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-03",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Florida",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Michigan",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "New Mexico",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-04",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "Idaho",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "Minnesota",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-05",
+      "state": "South Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-06",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-06",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-06",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-06",
+      "state": "Minnesota",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-07",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-07",
+      "state": "Florida",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-07",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-07",
+      "state": "Minnesota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-08",
+      "state": "Florida",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-09",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-09",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-09",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "California",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-10",
+      "state": "Washington",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Alaska",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Arizona",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "California",
+      "cases": 27,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Hawaii",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Minnesota",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Montana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "North Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Oregon",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "South Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Utah",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-11",
+      "state": "Washington",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Alabama",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Arkansas",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "California",
+      "cases": 30,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Colorado",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Idaho",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Illinois",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Iowa",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Kansas",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Louisiana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Michigan",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Minnesota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Mississippi",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Missouri",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Nebraska",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "North Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Ohio",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Oklahoma",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "South Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "South Dakota",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Wisconsin",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2024-12",
+      "state": "Wyoming",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Arizona",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Arkansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "California",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Connecticut",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Delaware",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Florida",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Georgia",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Idaho",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Indiana",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Maryland",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Michigan",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Minnesota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Missouri",
+      "cases": 15,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Nebraska",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "North Carolina",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Ohio",
+      "cases": 39,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Pennsylvania",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Puerto Rico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Rhode Island",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Texas",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Virginia",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-01",
+      "state": "West Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Arizona",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "California",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Connecticut",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Florida",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Indiana",
+      "cases": 13,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Iowa",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Louisiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Maine",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Michigan",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Missouri",
+      "cases": 7,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "New Mexico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "New York",
+      "cases": 10,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Ohio",
+      "cases": 31,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Pennsylvania",
+      "cases": 14,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-02",
+      "state": "Wyoming",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Illinois",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Indiana",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Kansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Maryland",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Mississippi",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Missouri",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "New Jersey",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "New Mexico",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "New York",
+      "cases": 12,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Ohio",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Oklahoma",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-03",
+      "state": "Pennsylvania",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "New Mexico",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "New York",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-04",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Arizona",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "New Jersey",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-05",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-06",
+      "state": "Arizona",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-06",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-07",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-08",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-08",
+      "state": "New York",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-08",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Minnesota",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Montana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "North Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "South Dakota",
+      "cases": 10,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-09",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "California",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Idaho",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Indiana",
+      "cases": 8,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Michigan",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Minnesota",
+      "cases": 15,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Montana",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "North Carolina",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Oregon",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Pennsylvania",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Utah",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Wisconsin",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-10",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "California",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Indiana",
+      "cases": 53,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Michigan",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "New Hampshire",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "North Carolina",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "North Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Oklahoma",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Oregon",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "South Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-11",
+      "state": "Washington",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Arkansas",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Florida",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Illinois",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Indiana",
+      "cases": 22,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Kansas",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Kentucky",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Minnesota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Nebraska",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Nevada",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "North Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "South Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "South Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Texas",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Vermont",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Washington",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "West Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2025-12",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Arkansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "California",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Colorado",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Georgia",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Illinois",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Indiana",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Kansas",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Kentucky",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Maryland",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Michigan",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Minnesota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Missouri",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Montana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Nebraska",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "New York",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "North Carolina",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Oklahoma",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Oregon",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Pennsylvania",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Texas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Washington",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "West Virginia",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-01",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "California",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Colorado",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Indiana",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Kansas",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Maine",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Maryland",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Massachusetts",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Mississippi",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "New York",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "North Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Oklahoma",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Pennsylvania",
+      "cases": 21,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "South Carolina",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "South Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-02",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Colorado",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Delaware",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Illinois",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Indiana",
+      "cases": 36,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Iowa",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Maryland",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Michigan",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "New Jersey",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "New York",
+      "cases": 9,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Pennsylvania",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "South Dakota",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Tennessee",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "West Virginia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-03",
+      "state": "Wisconsin",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "Georgia",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "Indiana",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "Minnesota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "North Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-04",
+      "state": "South Dakota",
+      "cases": 6,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-05",
+      "state": "Florida",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-05",
+      "state": "Indiana",
+      "cases": 15,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-05",
+      "state": "Minnesota",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-05",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-05",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-06",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-06",
+      "state": "Indiana",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-06",
+      "state": "New Jersey",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-06",
+      "state": "Pennsylvania",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-06",
+      "state": "Rhode Island",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-07",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-08",
+      "state": "Idaho",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-08",
+      "state": "South Dakota",
+      "cases": 4,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Idaho",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Indiana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Minnesota",
+      "cases": 11,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "South Dakota",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-09",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Arkansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "California",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Illinois",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Iowa",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Kentucky",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Minnesota",
+      "cases": 5,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Montana",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Nebraska",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "North Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Puerto Rico",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Utah",
+      "cases": 2,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Washington",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Wisconsin",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-10",
+      "state": "Wyoming",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "California",
+      "cases": 3,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Idaho",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Kansas",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Montana",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Ohio",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Oregon",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "South Dakota",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Utah",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Washington",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    },
+    {
+      "month": "2026-11",
+      "state": "Wisconsin",
+      "cases": 1,
+      "source": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/commercial-backyard-flocks"
+    }
+  ]
+}
