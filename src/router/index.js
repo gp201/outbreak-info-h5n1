@@ -5,6 +5,7 @@ import LineageSurveillanceView from "../views/LineageSurveillanceView.vue";
 import LineageComparisonView from "../views/LineageComparisonView.vue";
 import VariantMutationSurveillanceView from "../views/VariantMutationSurveillanceView.vue";
 import LiteratureAnnotationsView from "@/views/LiteratureAnnotationsView.vue";
+import EpidemiologyView from "@/views/EpidemiologyView.vue";
 
 const routes = [
     {
@@ -40,6 +41,11 @@ const routes = [
         path: '/integrated-surveillance',
         name: 'Multi-scale surveillance',
         component: VariantMutationSurveillanceView
+    },
+    {
+        path: '/epidemiology',
+        name: 'Epidemiology',
+        component: EpidemiologyView
     },
 ]
 

@@ -92,6 +92,17 @@
               Metadata
             </router-link>
           </li>
+          <li class="px-3 nav-item">
+            <router-link
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              class="nav-link"
+              :class="{ active: $route.path === '/epidemiology' }"
+              to="/epidemiology"
+            >
+              Epidemiology
+            </router-link>
+          </li>
         </ul>
       </div>
     </nav>
