@@ -5,12 +5,33 @@ name: Update H5N1 case data
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # every 6 hours
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
+env:
+  LABEL: h5n1-data-update # marks the pull requests this workflow opens
+
 jobs:
-  update:
+  # Skip the update while a pull request from this workflow is still open
+  check:
     if: github.repository == 'outbreak-info/outbreak-info-h5n1'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      open-pr: ${{ steps.pr.outputs.number }}
+    steps:
+      - id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pr=$(gh pr list --repo "$GITHUB_REPOSITORY" --label "$LABEL" --json number --jq '.[0].number // empty')
+          echo "number=$pr" >> "$GITHUB_OUTPUT"
+          if [ -n "$pr" ]; then echo "::notice::#$pr is still open, so skipping this run"; fi
+
+  update:
+    needs: check
+    if: needs.check.outputs.open-pr == ''
     runs-on: ubuntu-latest
     timeout-minutes: 90
     permissions:
@@ -22,9 +43,13 @@ jobs:
     env:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
-          persist-credentials: false # only the pull request step gets a GitHub token
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
 
       - name: Install Claude Code
         run: npm install -g @anthropic-ai/claude-code
@@ -32,19 +57,31 @@ jobs:
       - name: Fetch case data
         run: ./fetch_h5n1_cases.sh
 
-      - name: Open a pull request if the number of cases changed
+      # Sum the cases of every record ([month, state, cases, source]) before and after the update
+      - name: Count cases
+        id: cases
+        run: |
+          sum='[.humans[], .cattle[], .poultry[] | .[2]] | add'
+          before=$(git show HEAD:./h5n1_us_cases.json | jq "$sum")
+          after=$(jq "$sum" h5n1_us_cases.json)
+          echo "Cases before: $before, after: $after"
+          echo "before=$before" >> "$GITHUB_OUTPUT"
+          echo "after=$after" >> "$GITHUB_OUTPUT"
+          if [ "$before" != "$after" ]; then echo "create_pr=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Open a pull request
+        if: steps.cases.outputs.create_pr == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ steps.cases.outputs.before }}
+          AFTER: ${{ steps.cases.outputs.after }}
         run: |
+          branch=h5n1-cases-$(date +%Y-%m-%d-%H)
           gh auth setup-git
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          claude -p "Compare the number of cases in h5n1_us_cases.json with the last committed version \
-          (git show HEAD:./h5n1_us_cases.json): the confirmed and unconfirmed totals for humans, cattle and poultry. \
-          If none of them changed, stop without doing anything. Otherwise create a branch named h5n1-cases-$(date +%Y-%m-%d-%H), \
-          commit only h5n1_us_cases.json, push the branch, and open a pull request into main with gh pr create. \
-          In the description, list each total before and after." \
-            --model opus \
-            --permission-mode auto \
-            --allowedTools "Bash(git *)" "Bash(gh pr create *)" \
-            --no-session-persistence
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git switch -c "$branch"
+          git commit -m "chore: update H5N1 case data" h5n1_us_cases.json
+          git push origin "$branch"
+          gh label create "$LABEL" --force --color 1d76db --description "Automated H5N1 case data update"
+          gh pr create --base main --label "$LABEL" --title "Update H5N1 case data" --body "Total cases: $BEFORE → $AFTER"

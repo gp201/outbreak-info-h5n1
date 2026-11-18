@@ -52,7 +52,7 @@ The files are UTF-16 and tab-separated, with two header rows and then one row pe
 
 ## 2. Humans: CDC
 
-cdc.gov blocks curl, so read its two data files with headless Chrome, which wraps the JSON in `<pre>`:
+cdc.gov blocks curl, so read its two data files with headless Chrome (`google-chrome` on Linux), which wraps the JSON in `<pre>`:
 
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --dump-dom \
