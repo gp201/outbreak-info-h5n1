@@ -2,7 +2,7 @@
   <div class="container mt-3 mb-5">
     <h2>Epidemiology</h2>
     <InfoComponent :embedded="true" class="mb-3">
-      <span v-html="helpText.epidemiology.overview"></span> Data retrieved {{ retrievedOn }}.
+      <span v-html="helpText.epidemiology.overview"></span> <strong>Data retrieved {{ retrievedOn }}.</strong>
     </InfoComponent>
 
     <TabsWrapper :tabs="tabs" size="large">
