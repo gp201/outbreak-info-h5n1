@@ -21,9 +21,17 @@ export function getCaseCount(host, month = null) {
   return sum(confirmed(host).filter((r) => month === null || r.month === month));
 }
 
-// [{ key: "2024-10", value, group }], one row per record, for TimeSeriesBarChart with isPreBinned
-export function getCasesByMonth(host) {
-  return records[host].map((r) => ({ key: r.month, value: r.cases, group: groupOf(r) }));
+// [{ key: "2024-10", value, group }], one row per record, for TimeSeriesBarChart with isPreBinned.
+// Pass a state to keep only that state's records.
+export function getCasesByMonth(host, state = null) {
+  return records[host]
+    .filter((r) => !state || r.state === state)
+    .map((r) => ({ key: r.month, value: r.cases, group: groupOf(r) }));
+}
+
+// Every state with a record, alphabetical
+export function getStates(host) {
+  return [...new Set(records[host].map((r) => r.state))].sort();
 }
 
 // [{ state, value }], confirmed cases, largest first
