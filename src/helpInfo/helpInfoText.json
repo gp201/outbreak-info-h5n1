@@ -26,5 +26,12 @@
   "metadata": {
     "collectionReleaseLag": "The lag between the collection date and the release date over time.",
     "releaseDate": "A plot of the release dates of raw sequencing data on SRA."
+  },
+  "epidemiology": {
+    "overview": "Confirmed H5N1 cases in the United States. Blue bars are CDC or USDA APHIS data. Orange bars are newer cases from other reports (news, state announcements and verified accounts) that the official data doesn't include yet. Red bars are reported cases that aren't confirmed (for example sick but untested workers), shown as the number reported, or 1 if none is given, and left out of the totals. This data was researched and compiled by Claude, which gathered the official CDC and USDA APHIS data and searched news and state announcements for newer cases.",
+    "humans": "Human cases confirmed by CDC, by month of the CDC surveillance week.",
+    "cattle": "Dairy herds confirmed by USDA APHIS, by month of confirmation.",
+    "poultry": "Commercial and backyard flocks confirmed by USDA APHIS, by month of confirmation.",
+    "sources": "Every source these numbers come from."
   }
 }
