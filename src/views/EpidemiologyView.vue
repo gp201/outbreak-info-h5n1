@@ -1,12 +1,12 @@
 <template>
   <div class="container mt-3 mb-5">
     <h2>Epidemiology</h2>
-    <InfoComponent :embedded="true" class="mb-3">
-      <span v-html="helpText.epidemiology.overview"></span> <strong>Data retrieved {{ retrievedOn }}.</strong>
-    </InfoComponent>
 
     <TabsWrapper :tabs="tabs" size="large">
       <template v-for="(host, key) in hosts" :key="key" v-slot:[key]>
+        <InfoComponent :embedded="true" class="mb-3">
+          <span v-html="helpText.epidemiology.overview"></span> <strong>Data retrieved {{ retrievedOn }}.</strong>
+        </InfoComponent>
         <div class="row g-3">
           <div v-for="tile in tilesFor(key, host)" :key="tile.label" class="col-sm-4">
             <div class="tile">
@@ -38,6 +38,14 @@
           </ol>
         </template>
       </template>
+
+      <template v-slot:wastewater>
+        <InfoComponent :embedded="true" class="mb-3">
+          <span v-html="helpText.epidemiology.wastewater"></span> <strong>CDC updated this data {{ wastewaterUpdated }}.</strong>
+        </InfoComponent>
+        <h5 class="mt-4">Proportion of sites positive for A(H5), past six weeks</h5>
+        <WastewaterProportionPositive />
+      </template>
     </TabsWrapper>
   </div>
 </template>
@@ -46,7 +54,9 @@
 import { InfoComponent, TabsWrapper } from 'outbreakInfo';
 import CasesByMonth from "../components/CasesByMonth.vue";
 import CasesByState from "../components/CasesByState.vue";
+import WastewaterProportionPositive from "../components/WastewaterProportionPositive.vue";
 import { getCaseCount, getCasesByState, getSources, retrievedAt } from '../services/epidemiologyService.js';
+import { updated as wastewaterUpdated } from '../services/wastewaterService.js';
 import helpText from "../helpInfo/helpInfoText.json";
 
 const hosts = {
@@ -54,7 +64,7 @@ const hosts = {
   cattle: { name: 'Dairy cattle', title: 'Affected dairy herds', unit: 'Herds', tickInterval: '3 months', tickStep: 200 },
   poultry: { name: 'Poultry', title: 'Affected poultry flocks', unit: 'Flocks', tickInterval: '6 months', tickStep: 50 },
 };
-const tabs = Object.entries(hosts).map(([key, host]) => ({ name: host.name, key }));
+const tabs = [...Object.entries(hosts).map(([key, host]) => ({ name: host.name, key })), { name: 'Wastewater', key: 'wastewater' }];
 
 const retrievedOn = new Date(retrievedAt).toLocaleDateString('en-US', { dateStyle: 'medium' });
 
