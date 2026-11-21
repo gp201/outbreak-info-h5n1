@@ -43,20 +43,25 @@
         <InfoComponent :embedded="true" class="mb-3">
           <span v-html="helpText.epidemiology.wastewater"></span> <strong>CDC updated this data {{ wastewaterUpdated }}.</strong>
         </InfoComponent>
-        <h5 class="mt-4">Proportion of sites positive for A(H5), past six weeks</h5>
+        <h5 class="mt-4">Proportion of sites positive for A(H5), {{ allWeeks }}</h5>
         <WastewaterProportionPositive />
+
+        <h5 class="mt-4">Proportion of sites positive for A(H5) by state, {{ lastWeek }}</h5>
+        <!-- With every state at 0 the map's color scale has no range and paints them all mid-scale. -->
+        <UsChoroplethMap v-if="wastewaterByState.some((d) => d.value)" :data="wastewaterByState" valueLabel="Proportion of sites positive" />
+        <p v-else>No sites detected A(H5) from {{ lastWeek }}.</p>
       </template>
     </TabsWrapper>
   </div>
 </template>
 
 <script setup>
-import { InfoComponent, TabsWrapper } from 'outbreakInfo';
+import { InfoComponent, TabsWrapper, UsChoroplethMap } from 'outbreakInfo';
 import CasesByMonth from "../components/CasesByMonth.vue";
 import CasesByState from "../components/CasesByState.vue";
 import WastewaterProportionPositive from "../components/WastewaterProportionPositive.vue";
 import { getCaseCount, getCasesByState, getSources, retrievedAt } from '../services/epidemiologyService.js';
-import { updated as wastewaterUpdated } from '../services/wastewaterService.js';
+import { allWeeks, getProportionPositiveByState, lastWeek, updated as wastewaterUpdated } from '../services/wastewaterService.js';
 import helpText from "../helpInfo/helpInfoText.json";
 
 const hosts = {
@@ -65,6 +70,8 @@ const hosts = {
   poultry: { name: 'Poultry', title: 'Affected poultry flocks', unit: 'Flocks', tickInterval: '6 months', tickStep: 50 },
 };
 const tabs = [...Object.entries(hosts).map(([key, host]) => ({ name: host.name, key })), { name: 'Wastewater', key: 'wastewater' }];
+
+const wastewaterByState = getProportionPositiveByState();
 
 const retrievedOn = new Date(retrievedAt).toLocaleDateString('en-US', { dateStyle: 'medium' });
 

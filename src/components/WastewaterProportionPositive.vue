@@ -8,7 +8,7 @@
       :yMax="Math.max(0.05, ...chartData.map((d) => d.value))"
       :showLabels="true"
       labelKey="label"
-      xLabel="Week ending"
+      xLabel="Week"
       yLabel="Proportion of sites positive"
       :tooltipDecimalPlaces="3"
       :marginLeft="70"
