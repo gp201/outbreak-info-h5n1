@@ -1,7 +1,7 @@
-name: Update H5N1 case data
+name: Update H5N1 data
 
-# Every 6 hours, Claude Code updates src/assets/data/h5n1_us_cases.json and, if the number of cases changed,
-# opens a pull request with the new data. Needs the CLAUDE_CODE_OAUTH_TOKEN secret.
+# Every 6 hours, updates the case and wastewater data in src/assets/data and, if it changed, opens a pull request.
+# The case update runs Claude Code and needs the CLAUDE_CODE_OAUTH_TOKEN secret.
 
 on:
   schedule:
@@ -47,6 +47,9 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Fetch wastewater data
+        run: ./fetch_h5_wastewater.sh
+
       - uses: actions/setup-node@v7
         with:
           node-version: lts/*
@@ -57,31 +60,17 @@ jobs:
       - name: Fetch case data
         run: ./fetch_h5n1_cases.sh
 
-      # Sum the cases of every record ([month, state, cases, source]) before and after the update
-      - name: Count cases
-        id: cases
-        run: |
-          sum='[.humans[], .cattle[], .poultry[] | .[2]] | add'
-          before=$(git show HEAD:./h5n1_us_cases.json | jq "$sum")
-          after=$(jq "$sum" h5n1_us_cases.json)
-          echo "Cases before: $before, after: $after"
-          echo "before=$before" >> "$GITHUB_OUTPUT"
-          echo "after=$after" >> "$GITHUB_OUTPUT"
-          if [ "$before" != "$after" ]; then echo "create_pr=true" >> "$GITHUB_OUTPUT"; fi
-
-      - name: Open a pull request
-        if: steps.cases.outputs.create_pr == 'true'
+      - name: Open a pull request if the data changed
         env:
           GH_TOKEN: ${{ github.token }}
-          BEFORE: ${{ steps.cases.outputs.before }}
-          AFTER: ${{ steps.cases.outputs.after }}
         run: |
-          branch=h5n1-cases-$(date +%Y-%m-%d-%H)
+          # retrieved_at changes on every run, so a change to it alone doesn't count
+          if git diff --quiet -I '"retrieved_at"' h5n1_us_cases.json h5_wastewater.json; then echo "No changes"; exit 0; fi
+          branch=h5n1-data-$(date +%Y-%m-%d-%H)
           gh auth setup-git
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git switch -c "$branch"
-          git commit -m "chore: update H5N1 case data" h5n1_us_cases.json
+          git commit -m "chore: update H5N1 data" h5n1_us_cases.json h5_wastewater.json
           git push origin "$branch"
-          gh label create "$LABEL" --force --color 1d76db --description "Automated H5N1 case data update"
-          gh pr create --base main --label "$LABEL" --title "Update H5N1 case data" --body "Total cases: $BEFORE → $AFTER"
+          gh pr create --base main --label "$LABEL" --title "Update H5N1 data" --body "Automated update of the H5N1 case and wastewater data"
