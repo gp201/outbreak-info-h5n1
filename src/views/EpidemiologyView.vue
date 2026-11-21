@@ -49,7 +49,7 @@
         <h5 class="mt-4">Proportion of sites positive for A(H5) by state, {{ lastWeek }}</h5>
         <!-- With every state at 0 the map's color scale has no range and paints them all mid-scale. -->
         <UsChoroplethMap v-if="wastewaterByState.some((d) => d.value)" :data="wastewaterByState" valueLabel="Proportion of sites positive" />
-        <p v-else>No sites detected A(H5) from {{ lastWeek }}.</p>
+        <p v-else>No sites detected A(H5) during {{ lastWeek }}.</p>
       </template>
     </TabsWrapper>
   </div>
